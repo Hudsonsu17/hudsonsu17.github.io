@@ -7,10 +7,25 @@
 header{
     background-color: #006666;
     height: 100px;
-    width: 500px;
+    width: 800px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+}
+
+header div{
+    color:white;
 }
 
 h1{
-    color: white
+    color: white;
+}
+
+nav{
+    background-color: #ffb366;
+    width: 800px;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 20px
 }
