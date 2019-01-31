@@ -16,8 +16,9 @@ header{
 
 header div{
     color:white;
-    font-size: 15px;
+    font-size: 20px;
     font-style: italic;
+    font-family: cursive;
 }
 
 header h1{
@@ -42,8 +43,14 @@ nav ul li{
     
 }
 
-a {
+.menu a {
     color: black;
+    display: block;
+    text-decoration: none;
+}
+
+a.active {
+    color: #ff4e33;
 }
 
 a:link {
@@ -54,11 +61,12 @@ a:hover {
     color: #ff4e33;
 }
 
-a:active {
-    color: #006666;
+main h2{
+    text-align: center;
 }
 
 .ocean{
-    height: 100px;
-    width: 250px;
+    height: 300px;
+    width: 950px;
+    padding: 10px;
 }
