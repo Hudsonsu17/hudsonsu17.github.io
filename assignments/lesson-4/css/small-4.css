@@ -1,0 +1,16 @@
+/*header img{
+    width: 1000px;
+    height: 250px;
+    opacity: 0.5;
+}*/
+
+header{
+    background-color: #006666;
+    height: 100px;
+    width: 500px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    color: white
+}
