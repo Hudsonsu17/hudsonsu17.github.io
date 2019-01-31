@@ -1,13 +1,15 @@
-/*header img{
-    width: 1000px;
-    height: 250px;
-    opacity: 0.5;
-}*/
+header img, .headings{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+}
 
 header{
+   margin: 10px;
     background-color: #006666;
-    height: 100px;
-    width: 800px;
+    border: 1px solid #bbb;
+    box-shadow: 0 0 30px #777;
+    text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 10px;
 }
@@ -16,13 +18,14 @@ header div{
     color:white;
 }
 
-h1{
+header h1{
     color: white;
+    font-size: 35px;
 }
 
 nav{
     background-color: #ffb366;
-    width: 800px;
+    width: 850px;
 }
 
 nav ul li{
