@@ -65,10 +65,32 @@ main h2{
     text-align: center;
 }
 
-.ocean{
+.heroimage{
     height: 300px;
     width: 950px;
     padding: 10px;
+    opacity: .5;
+}
+
+.newsarticle {
+    border: 2px solid;
+    padding: 5px;
+    margin: 10px;
+}
+
+.weatherreport {
+    border: 1px solid;
+    width: 150px;
+    padding: 10px;
+}
+
+.map {
+    width: 650px;
+    height: 450px;
+}
+
+.contactinfo {
+    border: 3px solid;
 }
 
 footer{
