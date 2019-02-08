@@ -118,8 +118,11 @@
     }
 
     .heroimage{
-        max-width: 100%;
+        max-width: 80%;
         opacity: .75;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .newsarticle {
