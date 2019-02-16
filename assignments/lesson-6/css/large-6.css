@@ -80,6 +80,10 @@
         color: white;
     }
 
+
+    .responsive li {
+        display: block; 
+    }
 /*--------------------------------------------------------------------------------------------------------*/
 
     main h2{
@@ -136,7 +140,7 @@
 
     .weatherreport {
         position: absolute;
-        top: 1px;
+        top: 100px;
         border: 1px solid;
         background-color: #ffff80;
         width: 200px;
