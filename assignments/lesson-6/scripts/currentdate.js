@@ -5,7 +5,7 @@ let weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
 let year = today.getFullYear();
 let month = months[today.getMonth()];
 let week = weekday[today.getDay()];
-let day = today.getDay();
+let day = today.getDate();
 
 
 let date = week + ", " + day + " " + month + " " + year;
