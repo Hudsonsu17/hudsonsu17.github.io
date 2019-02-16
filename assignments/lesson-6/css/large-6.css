@@ -186,4 +186,27 @@
    .temp {
        text-align: center;
    }
+
+/*----------------------------------------------------------*/
+
+@media screen and (max-width: 600px) {
+  .menu a:not(:first-child) {display: none;}
+  .menu a.icon {
+    float: right;
+    display: block;
+  }
+
+  .menu.responsive {position: relative;}
+  .menu.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .menu.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
   }
