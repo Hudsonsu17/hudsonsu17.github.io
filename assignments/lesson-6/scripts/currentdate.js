@@ -12,4 +12,4 @@ let date = week + ", " + day + " " + month + " " + year;
 
 document.getElementById('currentdate').innerHTML = date;
 
-//Wednesday, 13 Febraury 2019//
+
