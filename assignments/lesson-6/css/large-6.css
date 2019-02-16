@@ -1,0 +1,185 @@
+@media screen 
+  and (min-device-width: 480px)  { 
+
+    .headerimage {
+        width: 100px;
+    }
+
+    header img, .headings {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 10px;
+    }
+
+    header{
+        background-color: #006666;
+        border: 1px solid #bbb;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 10px;
+    }
+
+    header div{
+        color:white;
+        font-size: 20px;
+        font-style: italic;
+        font-family: cursive;
+    }
+
+    header h1{
+        color: white;
+        font-size: 50px;
+    }
+
+    /*---------------------------------------------- Menu ------------------------------------------------*/
+
+    .dropbtn {
+        visibility: hidden;
+    }
+
+    nav {
+        box-shadow: 0 0 30px #777;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    /* this is copied from WC3*/
+    ul {
+        list-style-type: none;
+        overflow: hidden;
+        background-color: olivedrab;
+        text-align: center;
+      }
+
+    li {
+        vertical-align: middle;
+    }
+      
+    li a {
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        display: inline;
+        margin: 10px;
+    }
+      
+    li a:hover {
+        background-color: olive;
+    }
+    /* this is the end */
+
+    a.active {
+        color: white;
+    }
+
+    a:link {
+        text-decoration-line: none;
+    }
+
+    a:hover {
+        color: white;
+    }
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+    main h2{
+        text-align: center;
+    }
+
+    main {
+        width: 950px;
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+    .mainsection {
+        position: relative;
+    }
+
+    .weathertable {
+        border-collapse: collapse;
+        margin: 0 auto;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+        padding: 5px;
+    }
+
+    .heroimage{
+        height: auto;
+        padding: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*-----------------Article Section-----------------------*/
+    .newsarticle {
+        border: 1px solid lightgray;
+        background-color: #f1f1f1;
+        padding: 15px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .newsarticle h3 {
+        padding: 10px;
+    }
+
+    .article {
+        padding: 25px;
+    }
+
+    /*---------------------------------------------------------*/
+
+    .weatherreport {
+        position: absolute;
+        top: 1px;
+        border: 1px solid;
+        background-color: #ffff80;
+        width: 200px;
+        padding: 5px;
+    }
+
+    .map {
+        width: 650px;
+        height: auto;
+    }
+
+    .contactinfo {
+        border: 1px solid lightgray;
+        background-color: #f1f1f1;
+        padding: 5px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer{
+        background-color: olivedrab;
+        text-align: center;
+        width: 950px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+   .weatherforecast h3 {
+       text-align: center;
+   }
+
+   .weatherforecast {
+       display: block;
+   }
+
+   .weekday {
+       text-align: center;
+       vertical-align: middle;
+   }
+
+   .temp {
+       text-align: center;
+   }
+  }
