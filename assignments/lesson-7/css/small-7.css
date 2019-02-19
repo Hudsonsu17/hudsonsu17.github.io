@@ -9,12 +9,8 @@
     padding: 0;
 }
 
-    .headerimage {
-        float: left;
-    }
-
     header img, .headings{
-        /*display: inline-block;*/
+        display: inline-flex;
         vertical-align: middle;
         margin: 10px;
     }
@@ -39,6 +35,8 @@
         font-size: 35px;
     }
 
+/*-----------------------------------------Navigation Menu----------------------------------------*/
+
     nav{
         text-align: center;
         vertical-align: middle;
@@ -55,7 +53,7 @@
     }
     
     li a {
-        display: block;
+        display: flex;
         color: #000;
         padding: 8px 16px;
         text-decoration: none;
@@ -117,6 +115,8 @@
     a:link {
         text-decoration-line: none;
     }
+
+/*---------------------------------------------Main Section-------------------------------------*/
 
     main h2{
         text-align: center;

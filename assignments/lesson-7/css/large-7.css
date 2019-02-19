@@ -3,17 +3,19 @@
 
 /*------------------------------------------Header-----------------------------------------*/
 
-    .headerimage {
-        width: 100px;
-    }
+    /*.headerimage {
+        display: flex;
+        justify-content: center;
+    }*/
 
     header img, .headings {
-        display: inline-block;
+        display: flex;
+        justify-content: center;
         vertical-align: middle;
         margin: 10px;
     }
 
-    header{
+    .header{
         background-color: #006666;
         border: 1px solid #bbb;
         text-align: center;
@@ -22,7 +24,7 @@
     }
 
     header div{
-        color:white;
+        color: white;
         font-size: 20px;
         font-style: italic;
         font-family: cursive;
@@ -33,13 +35,15 @@
         font-size: 50px;
     }
 
-    /*---------------------------------------------- Menu ------------------------------------------------*/
+    /*---------------------------------------------- Navigation Menu ------------------------------------------------*/
 
     .dropbtn {
         visibility: hidden;
     }
 
     nav {
+        display: flex;
+        justify-content: center;
         box-shadow: 0 0 30px #777;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
@@ -50,6 +54,7 @@
         overflow: hidden;
         background-color: olivedrab;
         text-align: center;
+        width: 100%;
       }
 
     li {
@@ -59,16 +64,11 @@
     li a {
         color: black;
         text-align: center;
-        padding: 14px 16px;
+        /*padding: 14px 16px;*/
         text-decoration: none;
-        display: inline;
+        display: inline-flex;
         margin: 10px;
     }
-      
-    li a:hover {
-        background-color: olive;
-    }
-    /* this is the end */
 
     a.active {
         color: white;
@@ -81,7 +81,6 @@
     a:hover {
         color: white;
     }
-
 
     .responsive li {
         display: block; 
