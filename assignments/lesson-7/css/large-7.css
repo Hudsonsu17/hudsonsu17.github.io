@@ -171,6 +171,7 @@
         height: auto;
         display: block;
         margin: 0 auto;
+        color: #f1f1f1;
     }
 
    .weatherforecast h3 {
@@ -220,7 +221,8 @@ body h2 {
 }
 
 .container {
-    display: grid;
+    display: inline-grid;
+    align-content: inherit;
     grid-template-columns: 350px 350px 350px;
     grid-gap: 10px;
 }

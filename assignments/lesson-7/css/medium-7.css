@@ -173,6 +173,7 @@
         height: auto;
         display: block;
         margin: 0 auto;
+        color: #f1f1f1;
     }
 
    .weatherforecast h3 {
