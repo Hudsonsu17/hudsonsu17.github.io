@@ -163,7 +163,7 @@
         background-color: olivedrab;
         text-align: center;
         height: 50px;
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .weatherforecast {
@@ -173,4 +173,25 @@
     .menu.responsive .icon {
         display:none;
     }
+
+/*---------------------------------Gallery Page------------------------------*/
+body h2 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.flexchild {
+    width: 80%;
+    padding: 8px;
+}
+
+.flexchild:hover {
+    box-shadow: 0 0 50px #333;
+}
+  }
