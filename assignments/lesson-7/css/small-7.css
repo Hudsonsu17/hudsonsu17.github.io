@@ -11,7 +11,6 @@
     header img, .headings{
         display: inline-flex;
         vertical-align: middle;
-        margin: 10px;
     }
 
     header{
@@ -32,6 +31,8 @@
     header h1{
         color: white;
         font-size: 35px;
+        margin: 0 auto;
+        padding: 5px;
     }
 
 /*-----------------------------------------Navigation Menu----------------------------------------*/
@@ -46,7 +47,7 @@
         list-style-type: none;
         margin: 0;
         padding: 0;
-        max-width: 100%;
+        /*max-width: 100%;*/
         background-color: olivedrab;
         font-size: 25px;
     }
@@ -124,12 +125,6 @@
     .mainsection {
         position: relative;
     }
-    .heroimage{
-        max-width: 80%;
-        opacity: .75;
-        display: block;
-        margin: 0 auto;
-    }
 
     .newsarticle {
         border: 1px solid lightgray;
@@ -138,16 +133,41 @@
         margin: 10px;
     }
 
+    /*-------------------------------Weather Report-----------------------------*/
+
     .weatherreport {
         position: absolute;
         top: 5px;
-        left: 5px;
-        border: 1px solid;
-        background-color: #ffff80;
-        width: 150px;
+        left: 50px;
+        border-style: ridge;
+        border-color: #491d26;
+        border-width: 5px;
+        box-shadow: 0 0 30px #fff;
+        background-color: #803342;
+        opacity: .90;
         padding: 5px;
         font-size: 14px;
     }
+
+    .weatherreport h3 {
+        text-align: center;
+        font-size: 17px;
+        border-bottom: none;
+        color: white;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    .tempdetails {
+        padding: 15px;
+        color: white;
+        font-size: 11px;
+        border-style: inset;
+        border-color: #491d26;
+        border-width: 2px;
+    }
+
+    /*-----------------------------------Images-------------------------------------*/
 
     .map {
         max-width: 100%;
@@ -156,6 +176,14 @@
     .contactinfo {
         border: 1px solid lightgray;
         background-color: #f1f1f1;
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .heroimage{
+        max-width: 90%;
+        display: block;
+        margin: 0 auto;
     }
 
     footer{
@@ -189,9 +217,5 @@ body h2 {
 .flexchild {
     width: 80%;
     padding: 8px;
-}
-
-.flexchild:hover {
-    box-shadow: 0 0 50px #333;
 }
   }
