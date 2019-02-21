@@ -193,8 +193,9 @@
         padding: 5px;
     }
 
-    .googlemap {
-        float: right;
+    .map {
+        display: flex;
+        justify-content: flex-end;
     }
 
     /*-----------------------------------Footer------------------------------------*/
@@ -285,7 +286,7 @@ body h2 {
 }
 
 .container {
-    display: inline-grid;
+    display: grid;
     align-content: inherit;
     grid-template-columns: 350px 350px 350px;
     grid-gap: 10px;
