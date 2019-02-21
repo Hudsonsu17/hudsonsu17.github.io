@@ -21,7 +21,7 @@
         padding: 10px;
     }
 
-    header div{
+    .motto{
         color: white;
         font-size: 20px;
         font-style: italic;
@@ -87,6 +87,7 @@
         text-align: center;
         font-size: 16px;
         padding: 5px;
+        margin-bottom: 2px;
     }
 
     main {
@@ -114,11 +115,13 @@
 
     .newsarticle h3 {
         font-size: 20px;
-        margin-left: 25px;
+        margin-right: 25px;
+        text-align: right;
     }
 
     .newsarticle h5 {
-        margin-left: 25px;
+        margin-right: 25px;
+        text-align: right;
     }
 
     .article {
@@ -166,11 +169,10 @@
     }
 
     .newsphoto {
-        float: right;
+        float: left;
         margin: 10px;
     }
 
-    
     .heroimage{
         width: 100%;
         padding: 10px;
@@ -183,19 +185,23 @@
         border: 1px solid lightgray;
         background-color: #e6fff7;
         padding: 5px;
+        display: flex;
     }
 
     .contactinfo p {
         padding: 5px;
+        display: flex;
     }
 
     .contactinfo h4 {
         padding: 5px;
+        display: flex;
     }
 
     .map {
-        display: flex;
-        justify-content: flex-end;
+        width: 300px;
+        height: auto;
+        padding: 10px;
     }
 
     /*-----------------------------------Footer------------------------------------*/
@@ -208,6 +214,7 @@
         display: block;
         margin: 0 auto;
         color: #f1f1f1;
+        clear: right;
     }
 
     .footerbar {
@@ -287,7 +294,6 @@ body h2 {
 
 .container {
     display: grid;
-    align-content: inherit;
     grid-template-columns: 350px 350px 350px;
     grid-gap: 10px;
 }

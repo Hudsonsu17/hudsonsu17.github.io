@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
 }
+    /*----------------------------------------Heading-------------------------------------------*/
 
     header img, .headings{
         display: inline-flex;
@@ -21,7 +22,7 @@
         padding: 10px;
     }
 
-    header div{
+    .motto{
         color:white;
         font-size: 15px;
         font-style: italic;
@@ -185,11 +186,7 @@
         border-width: 2px;
     }
 
-    /*-----------------------------------Images-------------------------------------*/
-
-    .map {
-        max-width: 100%;
-    }
+    /*-----------------------------------Contact Section-------------------------------------*/
 
     .contactinfo {
         border: 1px solid lightgray;
@@ -201,6 +198,8 @@
     .map {
         width: 350px;
     }
+
+    /*----------------------------------Images-----------------------------------*/
 
     .heroimage{
         max-width: 90%;
@@ -228,6 +227,8 @@
         margin: 0 auto;
         padding-bottom: 8px;
     }
+
+    /*-----------------------------Hidden Items-------------------------*/
 
     .weatherforecast {
         display: none;
