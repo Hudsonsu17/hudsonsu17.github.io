@@ -62,7 +62,6 @@
         text-decoration: none;
         display: inline-flex;
         margin: 0 auto;
-        word-spacing: 20px;
         font-size: 20px;
     }
 
@@ -104,7 +103,7 @@
     /*-----------------Article Section-----------------------*/
     .newsarticle {
         border: 1px solid lightgray;
-        background-color: #f1f1f1;
+        background-color: #e6fff7;
         padding: 15px;
         display: block;
         margin-left: auto;
@@ -171,12 +170,24 @@
 
     .contactinfo {
         border: 1px solid lightgray;
-        background-color: #f1f1f1;
+        background-color: #e6fff7;
         padding: 5px;
         display: block;
         margin-left: auto;
         margin-right: auto;
         margin: 15px;
+    }
+
+    .contactinfo p {
+        padding: 5px;
+    }
+
+    .contactinfo h4 {
+        padding: 5px;
+    }
+
+    .googlemap {
+        float: right;
     }
 
     .heroimage{
