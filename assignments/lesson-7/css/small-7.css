@@ -126,13 +126,31 @@
         position: relative;
     }
 
+/*---------------------------------Article Section---------------------------*/
+
     .newsarticle {
         border: 1px solid lightgray;
-        background-color: #f1f1f1;
+        background-color: #e6fff7;
         padding: 5px;
         margin: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
+    .newsphoto {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+    }
+
+    .newsarticle h3 {
+        margin: 0 auto;
+    }
+
+    .newsarticle h5 {
+        margin: 0 auto;
+    }
     /*-------------------------------Weather Report-----------------------------*/
 
     .weatherreport {
@@ -175,9 +193,9 @@
 
     .contactinfo {
         border: 1px solid lightgray;
-        background-color: #f1f1f1;
+        background-color: #e6fff7;
         padding: 15px;
-        margin: 10px;
+        margin: 0 auto;
     }
 
     .heroimage{
@@ -186,12 +204,25 @@
         margin: 0 auto;
     }
 
+    /*----------------------------------Footer-------------------------*/
+
     footer{
         background-color: olivedrab;
         text-align: center;
         height: 50px;
         font-size: 12px;
         color: #f1f1f1;
+        margin: 0 auto;
+    }
+
+    .footerbar {
+        margin: 0 auto;
+        padding-top: 8px;
+    }
+
+    .date {
+        margin: 0 auto;
+        padding-bottom: 8px;
     }
 
     .weatherforecast {
@@ -199,7 +230,7 @@
     }
 
     .menu.responsive .icon {
-        display:none;
+        display: none;
     }
 
 /*---------------------------------Gallery Page------------------------------*/

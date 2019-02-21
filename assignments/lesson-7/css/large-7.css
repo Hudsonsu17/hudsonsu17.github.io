@@ -63,6 +63,7 @@
         display: inline-flex;
         margin: 0 auto;
         font-size: 20px;
+        padding-right: 20px;
     }
 
     a.active {
@@ -108,6 +109,7 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 15px;
     }
 
     .newsarticle h3 {
@@ -168,16 +170,19 @@
         margin: 10px;
     }
 
+    
+    .heroimage{
+        width: 100%;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     /*-------------------------------Contact Info------------------------*/
 
     .contactinfo {
         border: 1px solid lightgray;
         background-color: #e6fff7;
         padding: 5px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin: 15px;
     }
 
     .contactinfo p {
@@ -192,13 +197,6 @@
         float: right;
     }
 
-    .heroimage{
-        width: 100%;
-        padding: 10px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     /*-----------------------------------Footer------------------------------------*/
 
     footer{
@@ -210,6 +208,17 @@
         margin: 0 auto;
         color: #f1f1f1;
     }
+
+    .footerbar {
+        margin: 0 auto;
+        padding-top: 8px;
+    }
+
+    .date {
+        margin: 0 auto;
+        padding-bottom: 8px;
+    }
+
     /*----------------------------------Weather Forecast Table-------------------*/
 
    .weatherforecast h3 {
