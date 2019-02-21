@@ -62,9 +62,9 @@
         text-decoration: none;
         display: inline-flex;
         justify-content: center;
-        margin: 0 auto;
         font-size: 20px;
         padding-right: 20px;
+        margin-bottom: 0;
     }
 
     a.active {
@@ -204,7 +204,7 @@
         padding: 10px;
     }
 
-        .fa {
+     /*   .fa {
         padding: 20px;
         font-size: 30px;
         width: 30px;
@@ -328,9 +328,13 @@
     font-size: 40px;
 }
 
+.weathergrid {
+    margin: 0 auto;
+}
+
 .container {
     display: grid;
-    grid-template-columns: 350px 350px 350px;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
 }
 

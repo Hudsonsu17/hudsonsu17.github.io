@@ -245,9 +245,8 @@ body h2 {
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+    display: grid;
+    flex-direction: 1fr;
 }
 
 .flexchild {
