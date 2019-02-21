@@ -80,7 +80,7 @@
     .responsive li {
         display: block; 
     }
-/*--------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------Main-------------------------------------------*/
 
     main h2{
         text-align: center;
@@ -168,6 +168,8 @@
         margin: 10px;
     }
 
+    /*-------------------------------Contact Info------------------------*/
+
     .contactinfo {
         border: 1px solid lightgray;
         background-color: #e6fff7;
@@ -196,6 +198,8 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    /*-----------------------------------Footer------------------------------------*/
 
     footer{
         background-color: olivedrab;
@@ -236,7 +240,7 @@
        text-align: center;
    }
 
-/*----------------------------------------------------------*/
+/*-----------------------------------Responsive Nav Menu----------------------------------*/
 
 @media screen and (max-width: 600px) {
   .menu a:not(:first-child) {
