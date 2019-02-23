@@ -293,14 +293,12 @@ text-align: left;
 body h2 {
 text-align: center;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size: 40px;
+font-size: 35px;
 }
 
 .container {
-display: inline-grid;
-align-content: inherit;
-grid-template-columns: 350px 350px 350px;
-grid-gap: 10px;
+display: grid;
+grid-template-columns: .5fr .5fr;
 }
 
 .flexchild:hover {
