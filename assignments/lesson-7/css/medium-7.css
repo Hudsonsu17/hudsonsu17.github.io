@@ -305,8 +305,13 @@ grid-template-columns: .5fr .5fr;
 box-shadow: 0 0 50px #333;
 }
 
+.flexchild {
+    width: 100%;
+}
+
 .individual {
-width: 90%;
+width: 70%;
+font-size: 12px;
 }
 
 }
