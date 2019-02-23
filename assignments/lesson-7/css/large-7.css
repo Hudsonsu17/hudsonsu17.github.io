@@ -1,5 +1,5 @@
 @media screen 
-  and (min-device-width: 480px)  { 
+  and (min-device-width: 960px)  { 
 
 /*------------------------------------------Header-----------------------------------------*/
 
@@ -268,7 +268,7 @@
 
    .weatherforecast {
        display: block;
-       margin: 15px;
+       margin-bottom: 35px;
    }
 
    .weathertable {
@@ -295,7 +295,7 @@
 
 /*-----------------------------------Responsive Nav Menu----------------------------------*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 745px) {
   .menu a:not(:first-child) {
     display: none;
     }
@@ -314,6 +314,7 @@
     right: 0;
     top: 0;
   }
+
   .menu.responsive a {
     float: none;
     display: block;
@@ -336,6 +337,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
+    margin: 0 auto;
 }
 
 .flexchild:hover {

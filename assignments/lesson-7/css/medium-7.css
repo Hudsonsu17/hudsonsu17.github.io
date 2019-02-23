@@ -21,6 +21,7 @@ header img, .headings {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 10px;
+    width: 100%;
 }
 
 .motto{
@@ -47,6 +48,7 @@ nav {
     display: flex;
     justify-content: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
 }
 
 ul {
@@ -65,6 +67,7 @@ li a {
     display: inline-flex;
     margin: 0 auto;
     font-size: 20px;
+    padding-right: 20px;
 }
 
 a.active {
@@ -87,11 +90,12 @@ a:hover {
 main h2{
     text-align: center;
     font-size: 16px;
-    padding: 5px;
+    padding: 10px;
+    margin: 0 auto;
 }
 
 main {
-    width: 950px;
+    width: 100%;
     margin: 0 auto;
     padding: 5px;
 }
@@ -110,6 +114,7 @@ main {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin: 15px;
 }
 
 .newsarticle h3 {
@@ -206,12 +211,23 @@ main {
 footer{
     background-color: olivedrab;
     text-align: center;
-    width: 950px;
+    width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
     color: #f1f1f1;
 }
+
+.footerbar {
+    margin: 0 auto;
+    padding-top: 8px;
+}
+
+.date {
+    margin: 0 auto;
+    padding-bottom: 8px;
+}
+
 /*----------------------------------Weather Forecast Table-------------------*/
 
 .weatherforecast h3 {
@@ -220,7 +236,7 @@ footer{
 
 .weatherforecast {
    display: block;
-   margin: 15px;
+   margin-bottom: 35px;
 }
 
 .weathertable {
@@ -229,13 +245,16 @@ footer{
 }
 
 table, th, td {
-    border: 1px solid black;
+    border-style: ridge;
+    border-color: black;
+    border-width: 3px;
     padding: 5px;
 }
 
 .weekday {
    text-align: center;
    vertical-align: middle;
+   background-color: #fff037;
 }
 
 .temp {
