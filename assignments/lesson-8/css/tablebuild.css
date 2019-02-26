@@ -8,7 +8,7 @@ table {
 }
 
 td {
-    font-size: 14px;
+    font-size: 15px;
     border: 1px solid lightgrey;
     padding: 5px;
     text-align: center;
@@ -29,12 +29,12 @@ th {
 .specific {
     background-color: #628ca6;
     color: white;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 tfoot tr td {
     background-color: #7fb9c2;
-    font-size: 11px;
+    font-size: 10px;
     text-align: center;
     padding: 7px;
 }
