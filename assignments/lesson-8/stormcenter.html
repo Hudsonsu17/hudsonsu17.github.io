@@ -42,14 +42,63 @@
         </ul>
     </nav>
 
-    <main>
+    <form action="thanks.html">
+        <div>
+            <label class="data">First Name:</label>
+            <input type="text" name="first" required minlength="5">
+            <br>
+            <label class="data">Last Name:</label>
+            <input type="text" name="last" required minlength="5">
+            <br>
+            <label class="data">Email Address:</label>
+            <input type="email" name="email" placeholder="johnsmith@gmail.com" required minlength="10">
+            <br>
+            <label class="data">Phone Number:</label>
+            <input type="tel" name="telephone" required minlength="9">
+            <br>
+            <label class="data">Zip Code:</label>
+            <input type="number" name="areacode" required minlength="5">
+            <br>
+            <label class="data">Storm Date:</label>
+            <input type="date" name="date" required>
+            <br>
+            <label class="data">Type of Storm:</label>
+            <input type="text" name="storm" required list="l1">
+            <datalist id="l1">
+                <option>Flashflood</option>
+                <option>Hail</option>
+                <option>Hurricane</option>
+                <option>Thunderstorm</option>
+                <option>Tornado</option>
+            </datalist>
+            <br>
+            <label class="data">Storm Severity Level (1=tamed, 10=severe):</label>
+            <input type="range" name="level" id="rating" value ="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" required>
+            <span id="ratingvalue">5</span>
+            <br>
+            <label class="data">Storm Region:</label>
+            <select required>
+                <option value="Select Option" disabled selected>Select Option...</option>
+                <option value="Fish Haven">Fish Haven</option>
+                <option value="Preston">Preston</option>
+                <option value="Soda Springs">Soda Springs</option>
+            </select>
+            <br>
+            <label class="data"><u>User In-Danger Level:</u></label>
+            <input type="radio" name="danger" id="r1" required>
+                <label for="r1">Yes</label>
+            <input type="radio" name="danger" id="r2" required>
+                <label for="r2">Maybe</label>
+            <input type="radio" name="danger" id="r3" required>
+                <label for="r3">No</label>
+            <br>
+            <label class="data">Please provide any additional information or comments:</label>
+            <textarea name="msg" maxlength="300" rows="5"></textarea>
+            <br>
+        </div>
+        <input type="submit">
+    </form>
 
-    </main>
-
-    <section>
-
-    </section>
-    
     <footer>
         <p class="footerbar">&copy;2019 The Wonders of Southern Idaho | Attributions | Suzannah Hudson</p>
         <div id="currentdate"></div>
@@ -57,6 +106,7 @@
 
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/rating.js"></script>
 </body>
 
 </html>

@@ -352,10 +352,22 @@
     font-size: 13px;
 }
 
+/*--------------------------------Thank You HTML-----------------------------------*/
+.title {
+    text-align: center;
+    margin: 169px;
+}
+
+/*------------------------------Storm Gallery Page----------------------------------*/
+form {
+    display: block;
+    border: 1px solid black;
+}
+
+.data {
+    display: block;
+    margin: 10px;
+}
   }
-
-  
-
-
 
  
