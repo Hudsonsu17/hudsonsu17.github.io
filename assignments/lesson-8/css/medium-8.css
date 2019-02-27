@@ -322,7 +322,7 @@ font-size: 12px;
 /*------------------------------Storm Gallery Page----------------------------------*/
 form {
     display: block;
-    width: 50%;
+    width: 65%;
     border-style: double;
     border-width: 20px;
     border-color: #491d26;
@@ -338,5 +338,17 @@ form {
 
 form div input {
     padding: 5px;
+}
+
+.form {
+    margin: 10px;
+}
+
+.stormmain {
+    margin: 10px;
+}
+
+.form1 {
+    float: right;
 }
 }

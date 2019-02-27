@@ -384,7 +384,11 @@ form div input {
 }
 
 .stormmain {
-    margin: 10px;
+    padding: 10px;
+}
+
+.form1 {
+    float: right;
 }
   }
 
