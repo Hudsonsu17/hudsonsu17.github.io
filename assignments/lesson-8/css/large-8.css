@@ -361,11 +361,29 @@
 /*------------------------------Storm Gallery Page----------------------------------*/
 form {
     display: block;
-    border: 1px solid black;
+    width: 50%;
+    border-style: double;
+    border-width: 20px;
+    border-color: #491d26;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
 
 .data {
     display: block;
+    margin: 3px;
+}
+
+form div input {
+    padding: 5px;
+}
+
+.form {
+    margin: 10px;
+}
+
+.stormmain {
     margin: 10px;
 }
   }

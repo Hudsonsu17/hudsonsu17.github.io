@@ -321,10 +321,22 @@ font-size: 12px;
 
 /*------------------------------Storm Gallery Page----------------------------------*/
 form {
+    display: block;
+    width: 50%;
+    border-style: double;
+    border-width: 20px;
+    border-color: #491d26;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
 
 .data {
     display: block;
+    padding: 5px;
 }
 
+form div input {
+    padding: 5px;
+}
 }

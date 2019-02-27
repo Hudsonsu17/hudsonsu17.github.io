@@ -42,13 +42,14 @@
         </ul>
     </nav>
 
+    <main class="stormmain">
     <form action="thanks.html">
-        <div>
+        <div class="form">
             <label class="data">First Name:</label>
-            <input type="text" name="first" required minlength="5">
+            <input type="text" name="first" required minlength="5" pattern=".{5,}">
             <br>
             <label class="data">Last Name:</label>
-            <input type="text" name="last" required minlength="5">
+            <input type="text" name="last" required minlength="5" pattern=".{5,}">
             <br>
             <label class="data">Email Address:</label>
             <input type="email" name="email" placeholder="johnsmith@gmail.com" required minlength="10">
@@ -98,6 +99,7 @@
         </div>
         <input type="submit">
     </form>
+    </main>
 
     <footer>
         <p class="footerbar">&copy;2019 The Wonders of Southern Idaho | Attributions | Suzannah Hudson</p>
