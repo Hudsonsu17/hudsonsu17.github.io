@@ -9,12 +9,10 @@
 }
     /*----------------------------------------Heading-------------------------------------------*/
 
-    header img, .headings{
-        display: inline-flex;
-        vertical-align: middle;
-    }
-
-    header{
+header{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
         background-color: #006666;
         border: 1px solid #bbb;
         text-align: center;
