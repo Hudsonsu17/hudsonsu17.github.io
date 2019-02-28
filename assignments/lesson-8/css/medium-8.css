@@ -301,10 +301,6 @@ display: grid;
 grid-template-columns: .5fr .5fr;
 }
 
-.flexchild:hover {
-box-shadow: 0 0 50px #333;
-}
-
 .flexchild {
     width: 100%;
 }
