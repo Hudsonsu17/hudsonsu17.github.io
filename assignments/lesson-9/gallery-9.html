@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Wonders of Southern Idaho | The source for fun and adventure in Southern Idaho</title>
+    <meta name="description" content="local weather, tourist spots, events, and basic information for those who are visiting or living in Southern Idaho, especially for Preston, Fish Haven, and Soda Springs">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-9.css">
+    <link rel="stylesheet" href="css/medium-9.css">
+    <link rel="stylesheet" href="css/large-9.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="images/newicon.png" class="headerimage" alt="header logo">
+        <section class="headings">
+            <h1>The Wonders of Southern Idaho</h1>
+            <div class="motto">The places to go when you're looking for adventure</div>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="menu" id="navmenu">
+            <li class="dropdown">
+                <a href="#" class="dropbtn" onclick="toggleMenu()">&#9776; Menu</a>
+                <div class="dropdown-content">
+                    <a href="#">Home</a>
+                    <a href="preston-9.html">Preston</a>
+                    <a href="#">Soda Springs</a>
+                    <a href="#">Fish Haven</a>
+                    <a href="stormcenter.html">Storm Center</a>
+                    <a href="gallery-9.html" class="active">Gallery</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="weathergrid">
+        <h2 class="galleryh2">Weather Gallery</h2>
+        <section class="container">
+            <figure class="individual">
+                <img src="images/gallery1.jpg" class="flexchild" alt="cloudy sky">
+                <figcaption>The ever changing weather in Idaho leaves lots of beautiful sunsets with multi-color clouds in the sky</figcaption>
+            </figure>
+            <figure class="individual">
+                <img src="images/gallery2.jpg" class="flexchild" alt="lighting and storm clouds">
+                <figcaption>Idaho is a generally always at a dry climate, except for when Spring comes, when mutliple thunderstorms appear
+                    all around Idaho</figcaption>
+            </figure>
+            <figure class="individual">
+                <img src="images/gallery3.jpg" class="flexchild" alt="pouring rain">
+                <figcaption>Depending on where you are in Idaho you may get to experience the rare sight of a rainy day</figcaption>
+            </figure>
+            <figure class="individual">
+                <img src="images/gallery4.jpg" class="flexchild" alt="sunny sky with clouds">
+                <figcaption>The weather year round, almost 75% of the time, is sunny and warm</figcaption>
+            </figure>
+            <figure class="individual">
+                <img src="images/gallery5.jpg" class="flexchild" alt="rainbows">
+                <figcaption>Those few rain and thunderstorms seen in Idaho will produce the most beautiful rainbows you will ever see</figcaption>
+            </figure>
+            <figure class="individual">
+                <img src="images/gallery6.jpg" class="flexchild" alt="snowy mountains">
+                <figcaption>When winter comes around, Idaho experiences a lot of snow that lasts for months, even into what should be
+                    considered Spring time</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer class="galleryfoot">
+        <p class="footerbar">&copy;2019 The Wonders of Southern Idaho | Attributions | Suzannah Hudson</p>
+        <div id="currentdate"></div>
+    </footer>
+
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+</body>
+
+</html>
