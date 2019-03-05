@@ -1,0 +1,289 @@
+@media only screen 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { */
+
+* {       
+    margin: 0;
+    padding: 0;
+}
+    /*----------------------------------------Heading-------------------------------------------*/
+
+header{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        background-color: #006666;
+        border: 1px solid #bbb;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 10px;
+    }
+
+    .motto{
+        color:white;
+        font-size: 15px;
+        font-style: italic;
+        font-family: cursive;
+    }
+
+    header h1{
+        color: white;
+        font-size: 35px;
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+/*-----------------------------------------Navigation Menu----------------------------------------*/
+
+    nav{
+        text-align: center;
+        vertical-align: middle;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        /*max-width: 100%;*/
+        background-color: olivedrab;
+        font-size: 25px;
+    }
+    
+    li a {
+        display: flex;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+    
+    li a:hover {
+        background-color: #88a44e;
+        color: black;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #88a44e;
+        color: white;
+    }
+
+    li a:hover, .dropdown:hover .dropbtn {
+        background-color:olivedrab;
+        color: black;
+    }
+    
+    li.dropdown {
+        display: block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 415px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
+    
+    .dropdown-content a:hover {background-color: #f1f1f1}
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .menu a {
+        color: black;
+        display: block;
+        text-decoration: none;
+    }
+
+    a.active {
+        background-color: #555;
+        color: white;
+    }
+
+    a:link {
+        text-decoration-line: none;
+    }
+
+/*---------------------------------------------Main Section-------------------------------------*/
+
+    main h2{
+        text-align: center;
+    }
+
+    .mainsection {
+        position: relative;
+    }
+
+/*---------------------------------Article Section---------------------------*/
+
+    .newsarticle {
+        border: 1px solid lightgray;
+        background-color: #e6fff7;
+        padding: 15px;
+        margin: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .newsphoto {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+    }
+
+    .newsarticle h3 {
+        margin: 0 auto;
+    }
+
+    .newsarticle h5 {
+        margin: 0 auto;
+    }
+    /*-------------------------------Weather Report-----------------------------*/
+
+    .weatherreport {
+        position: absolute;
+        top: 20px;
+        left: 50px;
+        border-style: ridge;
+        border-color: #491d26;
+        border-width: 5px;
+        box-shadow: 0 0 30px #fff;
+        background-color: #803342;
+        opacity: .90;
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .weatherreport h3 {
+        text-align: center;
+        font-size: 17px;
+        border-bottom: none;
+        color: white;
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+    .tempdetails {
+        padding: 15px;
+        color: white;
+        font-size: 11px;
+        border-style: inset;
+        border-color: #491d26;
+        border-width: 2px;
+    }
+
+    /*-----------------------------------Contact Section-------------------------------------*/
+
+    .contactinfo {
+        border: 1px solid lightgray;
+        background-color: #e6fff7;
+        padding: 15px;
+        margin: 0 auto;
+    }
+
+    .map {
+        width: 350px;
+    }
+
+    /*----------------------------------Images-----------------------------------*/
+
+    .heroimage{
+        max-width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /*----------------------------------Footer-------------------------*/
+
+    footer{
+        background-color: olivedrab;
+        text-align: center;
+        height: 50px;
+        font-size: 12px;
+        color: #f1f1f1;
+        margin: 0 auto;
+    }
+
+    .footerbar {
+        margin: 0 auto;
+        padding-top: 8px;
+    }
+
+    .date {
+        margin: 0 auto;
+        padding-bottom: 8px;
+    }
+
+    /*-----------------------------Hidden Items-------------------------*/
+
+    .weatherforecast {
+        display: none;
+    }
+
+    .menu.responsive .icon {
+        display: none;
+    }
+
+/*---------------------------------Gallery Page------------------------------*/
+body h2 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    flex-direction: 1fr;
+}
+
+.flexchild {
+    width: 80%;
+    padding: 8px;
+}
+
+/*--------------------------------Thank You HTML-----------------------------------*/
+.title {
+    font-size: 20px;
+    display: block;
+}
+
+/*------------------------------Storm Gallery Page----------------------------------*/
+form {
+    display: block;
+    border-style: double;
+    border-width: 20px;
+    border-color: #491d26;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.data {
+    display: block;
+    padding: 8px;
+}
+
+form div input {
+    padding: 5px;
+}
+
+.form {
+    padding: 5px;
+}
+
+.stormmain {
+    margin: 10px;
+}
+  }
+
