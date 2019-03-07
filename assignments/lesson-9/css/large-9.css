@@ -377,4 +377,16 @@ form div input {
 }
   }
 
+/*---------------------------------Home Page---------------------------*/
+.hero img {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    width: 50%;
+    padding: 15px;
+}
+
+.homepage {
+    flex: grid;
+}
  
