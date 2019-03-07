@@ -47,41 +47,44 @@
     </section>
 
     <article class='homepage'>
-    <script>
-        const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
-        let request = new XMLHttpRequest();
-        request.open('GET', requestURL);
-        request.responseType = 'json';
-        request.send();
+        <script>
+            const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+            let request = new XMLHttpRequest();
+            request.open('GET', requestURL);
+            request.responseType = 'json';
+            request.send();
 
-        request.onload = function () {
-            let towndata = request.response;
-            let towns = towndata['towns'];
+            request.onload = function () {
+                let towndata = request.response;
+                let towns = towndata['towns'];
 
-            let output = document.querySelector('article');
+                let output = document.querySelector('article');
 
-            towns.forEach(town => {
-            if (town.name == 'Preston' || town.name == 'Fish Haven' || town.name == 'Soda Springs') {
-                let homeH3 = document.createElement('h3');
-                let motto = document.createElement('p');
-                let year = document.createElement('p');
-                let population = document.createElement('p');
-                let rainfall = document.createElement('p');
-                homeH3.textContent = town.name;
-                motto.textContent = town.motto;
-                year.textContent = 'Year Founded: ' + town.yearFounded;
-                population.textContent = 'Population: ' + town.currentPopulation;
-                rainfall.textContent = 'Annual Rain Fall: ' + town.averageRainfall;
-                output.appendChild(homeH3);
-                output.appendChild(motto);
-                output.appendChild(year);
-                output.appendChild(population);
-                output.appendChild(rainfall);
-            }
-            });
-        };
-    </script>
-</article>
+                towns.forEach(town => {
+                    if (town.name == 'Preston' || town.name == 'Fish Haven' || town.name == 'Soda Springs') {
+                        let homeH3 = document.createElement('h3');
+                        let motto = document.createElement('p');
+                        let year = document.createElement('p');
+                        let population = document.createElement('p');
+                        let rainfall = document.createElement('p');
+                        var x = document.createElement("IMG");
+                        x.setAttribute("src", "images_fishaven.jpg");
+                        homeH3.textContent = town.name;
+                        motto.textContent = town.motto;
+                        year.textContent = 'Year Founded: ' + town.yearFounded;
+                        population.textContent = 'Population: ' + town.currentPopulation;
+                        rainfall.textContent = 'Annual Rain Fall: ' + town.averageRainfall;
+                        output.appendChild(homeH3);
+                        output.appendChild(motto);
+                        output.appendChild(year);
+                        output.appendChild(population);
+                        output.appendChild(rainfall);
+                        output.appendChild(x);
+                    }
+                });
+            };
+        </script>
+    </article>
 
     <main>
         <article class="contactinfo">

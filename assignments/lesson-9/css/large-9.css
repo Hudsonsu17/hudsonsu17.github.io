@@ -387,6 +387,23 @@ form div input {
 }
 
 .homepage {
-    flex: grid;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.homepage h3 {
+    color: red;
+    font-style: bold;
+}
+
+.homepage p {
+    color: blue;
+    margin: 0 auto;
+    padding: 5px;
 }
  
