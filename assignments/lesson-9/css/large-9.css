@@ -387,24 +387,42 @@ form div input {
 }
 
 .homepage {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid black;
-    width: 70%;
+    width: 65%;
     margin: 0 auto;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
 }
 
 .homepage h3 {
-    color: red;
+    color: #004d4d;
     font-style: bold;
+    font-size: 25px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.homepage div {
+    margin: 0 auto;
+    padding: 5px;
+    width: 190px;
+    word-wrap: break-word;
+    text-align: center;
 }
 
 .homepage p {
-    color: blue;
-    margin: 0 auto;
-    padding: 5px;
+    /*display: grid;*/
+    padding: 10px;
+    border-style: inset;
+    border-width: 10px;
+    border-color: green;
+    background-color: #f1f1f1;
 }
- 
+
+.jsonmotto {
+    font-style: italic;
+}
+/*need flex-direction: row; but as a whole, not for each item*/
