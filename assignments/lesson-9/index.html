@@ -61,47 +61,7 @@
             let output = document.querySelector('article');
 
             towns.forEach(town => {
-            if (town.name == 'Preston') {
-                let homeH3 = document.createElement('h3');
-                let motto = document.createElement('p');
-                let year = document.createElement('p');
-                let population = document.createElement('p');
-                let rainfall = document.createElement('p');
-                homeH3.textContent = town.name;
-                motto.textContent = town.motto;
-                year.textContent = 'Year Founded: ' + town.yearFounded;
-                population.textContent = 'Population: ' + town.currentPopulation;
-                rainfall.textContent = 'Annual Rain Fall: ' + town.averageRainfall;
-                output.appendChild(homeH3);
-                output.appendChild(motto);
-                output.appendChild(year);
-                output.appendChild(population);
-                output.appendChild(rainfall);
-            }
-            });
-
-            towns.forEach(town => {
-            if (town.name == 'Fish Haven') {
-                let homeH3 = document.createElement('h3');
-                let motto = document.createElement('p');
-                let year = document.createElement('p');
-                let population = document.createElement('p');
-                let rainfall = document.createElement('p');
-                homeH3.textContent = town.name;
-                motto.textContent = town.motto;
-                year.textContent = 'Year Founded: ' + town.yearFounded;
-                population.textContent = 'Population: ' + town.currentPopulation;
-                rainfall.textContent = 'Annual Rain Fall: ' + town.averageRainfall;
-                output.appendChild(homeH3);
-                output.appendChild(motto);
-                output.appendChild(year);
-                output.appendChild(population);
-                output.appendChild(rainfall);
-            }
-            });
-
-            towns.forEach(town => {
-            if (town.name == 'Soda Springs') {
+            if (town.name == 'Preston' || town.name == 'Fish Haven' || town.name == 'Soda Springs') {
                 let homeH3 = document.createElement('h3');
                 let motto = document.createElement('p');
                 let year = document.createElement('p');
