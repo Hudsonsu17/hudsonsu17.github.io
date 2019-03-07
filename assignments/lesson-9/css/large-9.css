@@ -394,6 +394,7 @@ form div input {
     border: 1px solid black;
     width: 70%;
     margin: 0 auto;
+    height: auto;
 }
 
 .homepage h3 {

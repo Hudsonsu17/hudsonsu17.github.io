@@ -43,7 +43,7 @@
     </nav>
 
     <section class="hero">
-        <img src="images/homepage.jpg">
+        <img src="images/homepage.jpg" alt="home page photo">
     </section>
 
     <article class='homepage'>
@@ -61,14 +61,15 @@
                 let output = document.querySelector('article');
 
                 towns.forEach(town => {
-                    if (town.name == 'Preston' || town.name == 'Fish Haven' || town.name == 'Soda Springs') {
+                    if (town.name == 'Preston') {
                         let homeH3 = document.createElement('h3');
                         let motto = document.createElement('p');
                         let year = document.createElement('p');
                         let population = document.createElement('p');
                         let rainfall = document.createElement('p');
-                        var x = document.createElement("IMG");
-                        x.setAttribute("src", "images_fishaven.jpg");
+                        //let x = document.createElement("img");
+                        // x.setAttribute("src", "images_preston.jpg");
+                        // x.setAttribute("alt", "Preston Town");
                         homeH3.textContent = town.name;
                         motto.textContent = town.motto;
                         year.textContent = 'Year Founded: ' + town.yearFounded;
@@ -79,7 +80,55 @@
                         output.appendChild(year);
                         output.appendChild(population);
                         output.appendChild(rainfall);
-                        output.appendChild(x);
+                        //output.appendChild(x);
+                    }
+                });
+
+                    towns.forEach(town => {
+                    if (town.name == 'Fish Haven') {
+                        let homeH3 = document.createElement('h3');
+                        let motto = document.createElement('p');
+                        let year = document.createElement('p');
+                        let population = document.createElement('p');
+                        let rainfall = document.createElement('p');
+                        // let x = document.createElement("img");
+                        // x.setAttribute("src", "images_fishaven.jpg");
+                        // x.setAttribute("alt", "Fish Haven Town");
+                        homeH3.textContent = town.name;
+                        motto.textContent = town.motto;
+                        year.textContent = 'Year Founded: ' + town.yearFounded;
+                        population.textContent = 'Population: ' + town.currentPopulation;
+                        rainfall.textContent = 'Annual Rain Fall: ' + town.averageRainfall;
+                        output.appendChild(homeH3);
+                        output.appendChild(motto);
+                        output.appendChild(year);
+                        output.appendChild(population);
+                        output.appendChild(rainfall);
+                        //output.appendChild(x);
+                    }
+                });
+
+                    towns.forEach(town => {
+                    if (town.name == 'Soda Springs') {
+                        let homeH3 = document.createElement('h3');
+                        let motto = document.createElement('p');
+                        let year = document.createElement('p');
+                        let population = document.createElement('p');
+                        let rainfall = document.createElement('p');
+                        // let x = document.createElement("img");
+                        // x.setAttribute("src", "images_sodasprings.jpg");
+                        // x.setAttribute("alt", "Soda Springs Town");
+                        homeH3.textContent = town.name;
+                        motto.textContent = town.motto;
+                        year.textContent = 'Year Founded: ' + town.yearFounded;
+                        population.textContent = 'Population: ' + town.currentPopulation;
+                        rainfall.textContent = 'Annual Rain Fall: ' + town.averageRainfall;
+                        output.appendChild(homeH3);
+                        output.appendChild(motto);
+                        output.appendChild(year);
+                        output.appendChild(population);
+                        output.appendChild(rainfall);
+                        //output.appendChild(x);
                     }
                 });
             };
@@ -95,7 +144,7 @@
                 <br> Email: wondersofsi@gmail.com</p>
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed/v1/view?zoom=12&center=42.0963%2C-111.8766&key=AIzaSyBraCrN9eDxKmBetKaWsMejLTV6sKG3WDs"
-                    frameborder="0" style="border:0" allowfullscreen></iframe>
+                style="border:0" allowfullscreen></iframe>
             </div>
         </article>
     </main>
