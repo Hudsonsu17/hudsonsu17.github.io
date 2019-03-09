@@ -375,7 +375,7 @@ form div input {
 .form1 {
     float: right;
 }
-  }
+ 
 
 /*---------------------------------Home Page---------------------------*/
 .hero img {
@@ -384,6 +384,7 @@ form div input {
     height: auto;
     width: 65%;
     padding: 15px;
+    padding-top: 30px;
 }
 
 .homepage {
@@ -393,6 +394,7 @@ form div input {
     display: flex;
     justify-content: space-around;
     padding: 15px;
+    padding-top: 0;
 }
 
 .homepage h3 {
@@ -428,3 +430,4 @@ form div input {
 .homepage p img {
     width: 220px;
 }
+  }
