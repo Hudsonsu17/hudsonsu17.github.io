@@ -1,0 +1,348 @@
+@media only screen 
+  and (min-device-width: 500px) 
+  and (max-device-width: 960px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+/*------------------------------------------Header-----------------------------------------*/
+
+.headerimage {
+    margin: 50px;
+    position: relative;
+    left: 50px;
+}
+
+header{
+    background-color: #006666;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.motto{
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+    font-family: cursive;
+    margin: 10px;
+}
+
+header h1{
+    color: white;
+    font-size: 50px;
+    margin: 15px;
+}
+
+/*-------------------------------------- Navigation Menu ----------------------------------*/
+
+.dropbtn {
+    visibility: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    background-color: olivedrab;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+li a {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    margin: 0 auto;
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+a.active {
+    color: white;
+}
+
+a:link {
+    text-decoration-line: none;
+}
+
+a:hover {
+    color: white;
+}
+
+.responsive li {
+    display: block; 
+}
+/*--------------------------------------Main-------------------------------------------*/
+
+main h2{
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.mainsection {
+    position: relative;
+    padding: 5px;
+    margin: 5px;
+}
+
+/*-----------------Article Section-----------------------*/
+.newsarticle {
+    border: 1px solid lightgray;
+    background-color: #e6fff7;
+    padding: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 15px;
+}
+
+.newsarticle h3 {
+    font-size: 20px;
+    margin-left: 25px;
+}
+
+.newsarticle h5 {
+    margin-left: 25px;
+}
+
+.article {
+    padding: 25px;
+}
+
+/*--------------------------Weather Report-------------------------------*/
+
+.weatherreport {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    border-style: ridge;
+    border-color: #491d26;
+    border-width: 5px;
+    box-shadow: 0 0 30px #fff;
+    background-color: #803342;
+    opacity: .90;
+    width: 200px;
+    padding: 5px;
+}
+
+.weatherreport h3 {
+    text-align: center;
+    font-size: 25px;
+    border-bottom: none;
+    color: white;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.tempdetails {
+    padding: 15px;
+    color: white;
+    border-style: inset;
+    border-color: #491d26;
+    border-width: 2px;
+}
+
+/*----------------------------Images---------------------------------------*/
+
+.map {
+    width: 650px;
+    height: auto;
+}
+
+.newsphoto {
+    float: right;
+    margin: 10px;
+}
+
+/*-------------------------------Contact Info------------------------*/
+
+.contactinfo {
+    border: 1px solid lightgray;
+    background-color: #e6fff7;
+    padding: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 15px;
+}
+
+.contactinfo p {
+    padding: 5px;
+}
+
+.contactinfo h4 {
+    padding: 5px;
+}
+
+.googlemap {
+    float: right;
+}
+
+.heroimage{
+    width: 100%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*-----------------------------------Footer------------------------------------*/
+
+footer{
+    background-color: olivedrab;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    color: #f1f1f1;
+}
+
+.footerbar {
+    margin: 0 auto;
+    padding-top: 8px;
+}
+
+.date {
+    margin: 0 auto;
+    padding-bottom: 8px;
+}
+
+/*----------------------------------Weather Forecast Table-------------------*/
+
+.weatherforecast h3 {
+   text-align: center;
+}
+
+.weatherforecast {
+   display: block;
+   margin-bottom: 35px;
+}
+
+.weathertable {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+table, th, td {
+    border-style: ridge;
+    border-color: black;
+    border-width: 3px;
+    padding: 5px;
+}
+
+.weekday {
+   text-align: center;
+   vertical-align: middle;
+   background-color: #fff037;
+}
+
+.temp {
+   text-align: center;
+}
+
+/*-----------------------------------Responsive Nav Menu----------------------------------*/
+
+@media screen and (max-width: 600px) {
+.menu a:not(:first-child) {
+display: none;
+}
+
+.menu a.icon {
+float: right;
+display: block;
+}
+
+.menu.responsive {
+position: relative;
+}
+
+.menu.responsive .icon {
+position: absolute;
+right: 0;
+top: 0;
+}
+.menu.responsive a {
+float: none;
+display: block;
+text-align: left;
+}
+}
+
+/*---------------------------------Weather Gallery--------------------------------*/
+body h2 {
+text-align: center;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 35px;
+}
+
+.container {
+display: grid;
+grid-template-columns: .5fr .5fr;
+}
+
+.flexchild {
+    width: 100%;
+}
+
+.individual {
+width: 70%;
+font-size: 12px;
+}
+
+/*--------------------------------Thank You HTML-----------------------------------*/
+.title {
+    margin: 300px;
+}
+
+/*------------------------------Storm Gallery Page----------------------------------*/
+form {
+    display: block;
+    width: 65%;
+    border-style: double;
+    border-width: 20px;
+    border-color: #491d26;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.data {
+    display: block;
+    padding: 5px;
+}
+
+form div input {
+    padding: 5px;
+}
+
+.form {
+    margin: 10px;
+}
+
+.stormmain {
+    margin: 10px;
+}
+
+.form1 {
+    float: right;
+}
+}

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Wonders of Southern Idaho | The source for fun and adventure in Southern Idaho</title>
+    <meta name="description" content="local weather, tourist spots, events, and basic information for those who are visiting or living in Southern Idaho, especially for Preston, Fish Haven, and Soda Springs">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-10.css">
+    <link rel="stylesheet" href="css/medium-10.css">
+    <link rel="stylesheet" href="css/large-10.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/newicon.png" class="headerimage" alt="header logo">
+        <section class="headings">
+            <h1>The Wonders of Southern Idaho</h1>
+            <div class="motto">The places to go when you're looking for adventure</div>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="menu" id="navmenu">
+            <li class="dropdown">
+                <a href="#" class="dropbtn" onclick="toggleMenu()">&#9776; Menu</a>
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="preston-10.html" class="active">Preston</a>
+                    <a href="#">Soda Springs</a>
+                    <a href="#">Fish Haven</a>
+                    <a href="stormcenter.html">Storm Center</a>
+                    <a href="gallery-10.html">Gallery</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 class="prestonh2">Preston Idaho</h2>
+        <section class="mainsection">
+            <picture>
+                <img class="heroimage" src="images/headerphoto.jpg" alt="ocean photo">
+            </picture>
+            <section class="weatherreport">
+                <h3>Weather Summary</h3>
+                <div class="tempdetails">
+                    <div class="label">Currently: Sunny</div>
+                    <div class="label">High:
+                        <span id="temp">80</span> &deg;F</div>
+                    <div class="label" id="output"></div>
+                    <div class="label">Humidity: 79%</div>
+                    <div class="label">Wind Speed:
+                        <span id="speed">10</span> mph</div>
+                </div>
+            </section>
+        </section>
+
+        <section class="weatherforecast">
+            <h3>5-Day Weather Forecast</h3>
+            <table class="weathertable">
+                <thead>
+                    <tr>
+                        <th class="weekday">Mon</th>
+                        <th class="weekday">Tue</th>
+                        <th class="weekday">Wed</th>
+                        <th class="weekday">Thu</th>
+                        <th class="weekday">Fri</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="temp">
+                            <img src="images/sunicon.png" alt="sun with clouds" class="forcasticon">
+                            <br>89 Degrees</td>
+                        <td class="temp">
+                            <img src="images/cloudyicon.png" alt="sunny" class="forcasticon">
+                            <br>85 Degrees</td>
+                        <td class="temp">
+                            <img src="images/cloudsicon.png" alt="clouds" class="forcasticon">
+                            <br>83 Degrees</td>
+                        <td class="temp">
+                            <img src="images/sunicon.png" alt="sun with clouds" class="forcasticon">
+                            <br>86 Degrees</td>
+                        <td class="temp">
+                            <img src="images/sunicon.png" alt="sun with clouds" class="forcasticon">
+                            <br>80 Degrees</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <article class="newsarticle">
+            <img src="images/articlesmall.jpg" alt="playground" class="newsphoto">
+            <h3>Weekly Newsletter</h3>
+            <h5>Bishp Gammon</h5>
+            <p class="article">To all members of the Rexburg YSA 11th Stake, As a Stake Presidency we invite all members of the stake to attend
+                Stake Conference to receive personal revelation on February 23rd and 24th. The theme for the conference is:
+                “Becoming True Disciples of Christ in Higher and Holier Ways”. As part of this conference, the following
+                meetings will be held:Adult Evening Session will be held on Saturday February 23rd from 7pm to 8:30pm. This
+                meeting will be held in the Taylor Chapel. All Stake members are invited and encouraged to attend this session.
+                Leadership Session will be held on Sunday February 24th from 8am to 9:30am. This meeting will be held in
+                SMI 244. Those invited to attend this session include the Stake Presidency, High Council, Bishoprics, Stake
+                and Ward Executive Secretaries and Clerks, Elder’s Quorum Presidencies including Secretaries, Ward Mission
+                Leaders, Stake and Ward Relief Society Presidencies including Secretaries, and Stake and Ward Sunday School
+                Presidencies with Secretaries. General Session will be held on Sunday February 24th from 10am to 12pm. This
+                session is for all stake members and will be held in the Hart Auditorium. Stake Conference is a wonderful
+                opportunity for all members of the stake to come together to be uplifted and edified. We encourage each member
+                to make attending Stake Conference a high priority. As a Stake Presidency we also encourage all to come to
+                Conference with a prayerful heart, ready and prepared to be strengthened as we enjoy the spiritual out-pouring
+                that will bind us together in faith and love for our Savior, Jesus Christ. We look forward to being together
+                with you, Sincerely, The Rexburg YSA 11th Stake Presidency</p>
+        </article>
+
+        <article class="contactinfo">
+            <h4>The Wonders of Southern Idaho Website</h4>
+            <p>30 N 1st E
+                <br> Preston, ID 83263</p>
+            <p>Phone: 208-555-5555
+                <br> Email: wondersofsi@gmail.com</p>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed/v1/view?zoom=12&center=42.0963%2C-111.8766&key=AIzaSyBraCrN9eDxKmBetKaWsMejLTV6sKG3WDs"
+                    style="border:0" allowfullscreen></iframe>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p class="footerbar">&copy;2019 The Wonders of Southern Idaho | Attributions | Suzannah Hudson</p>
+        <div id="currentdate" class="date"></div>
+    </footer>
+
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+</html>
