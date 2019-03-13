@@ -3,13 +3,11 @@
     padding: 0;
 }
     /*----------------------------------------Heading-------------------------------------------*/
-
 header{
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
         background-color: #006666;
-        border: 1px solid #bbb;
         text-align: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         padding: 10px;
