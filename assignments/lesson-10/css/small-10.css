@@ -41,6 +41,7 @@ nav {
 .menu {
     list-style-type: none;
     display: flex;
+    flex-direction: column;
 }
 
 .menu li {
@@ -279,6 +280,7 @@ form div input {
 
 .homepage p {
     padding: 10px;
+    margin: 10px;
     border-style: inset;
     border-width: 10px;
     border-color: green;
