@@ -7,5 +7,9 @@ weatherRequest.onload =  function () {
     let weatherData = JSON.parse(weatherRequest.responseText);
     console.log(weatherData);
 
-    document.getElementById('current-temp').innerHTML = weatherData.main.temp;
+    document.getElementById('sky').innerHTML = "Currently: " + weatherData.weather[0].main;
+    document.getElementById('currenttemp').innerHTML = "High Temp: " + weatherData.main.temp_max + " &deg;F";
+    document.getElementById('humid').innerHTML = "Humidity: " + weatherData.main.humidity + "%";
+    document.getElementById('speed').innerHTML = "Wind Speed: " + weatherData.wind.speed + " mph";
+
 }
