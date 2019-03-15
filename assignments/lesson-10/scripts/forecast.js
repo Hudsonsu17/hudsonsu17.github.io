@@ -26,12 +26,9 @@ forecastRequest.onload = function () {
 
     for (let i = 1; i <= 5; i++) {
         document.getElementById('forecast' + i).innerHTML = temp[i] + " &deg;F";
-    }
-
-    for (let i = 1; i <= 5; i++) {
         let icon = "http://openweathermap.org/img/w/" + forecastData.list[i].weather[0].icon + ".png";
         let desc = forecastData.list[i].weather[0].description;
-        document.getElementById('foreimg1').setAttribute('src', icon);
-        document.getElementById('foreimg1').setAttribute('alt', desc);
+        document.getElementById('foreimg' + i).setAttribute('src', icon);
+        document.getElementById('foreimg' + i).setAttribute('alt', desc);
     }
 }
