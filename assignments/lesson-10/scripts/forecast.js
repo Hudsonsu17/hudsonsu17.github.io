@@ -5,17 +5,15 @@ forecastRequest.send();
 
 forecastRequest.onload = function () {
     let forecastData = JSON.parse(forecastRequest.responseText);
+    console.log(forecastData);
 
     let temp = [];
     let day = 1;
 
-    // let time = forecastData.list;
-
-    // for (let i = 1; i <= time.length; i++) {
-    //         if (time.dt_txt.includes('18:00:00')) {
-    //         temp[day] = time.main.temp;
-    //         // let icon = "https://openweathermap.org/img/w" + forecastData.weather[0].icon + ".png"
-    //         // let desc = forecastData.weather[0].description;
+    // for (let i = 0; i <= forecastData.list.length; i++) {
+    //     if (forecastData.list[i].dt_txt.includes('18:00:00')) {
+    //         temp[day] = forecastData.list[i].main.temp;
+    //         day++
     //     }
     // }
 
@@ -30,11 +28,10 @@ forecastRequest.onload = function () {
         document.getElementById('forecast' + i).innerHTML = temp[i] + " &deg;F";
     }
 
-    let icon = "https://openweathermap.org/img/w/" + forecastData.weather[0].icon + ".png";
-    let desc = forecastData.weather[0].description;
-
-    //for (let i = 1; i <= 5; i++) {
+    for (let i = 1; i <= 5; i++) {
+        let icon = "http://openweathermap.org/img/w/" + forecastData.list[i].weather[0].icon + ".png";
+        let desc = forecastData.list[i].weather[0].description;
         document.getElementById('foreimg1').setAttribute('src', icon);
         document.getElementById('foreimg1').setAttribute('alt', desc);
-    //}
+    }
 }

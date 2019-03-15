@@ -28,51 +28,58 @@ header{
     }
 
 /*-----------------------------------------Navigation Menu----------------------------------------*/
-nav {
-    background-color: olivedrab;;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+    nav {
+        background-color: olivedrab;;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
 
-.active {
-    background-color: #55711c;
-    color: white;
-}
+    .active {
+        background-color: #55711c;
+        color: white;
+    }
 
-.menu {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-}
+    .menu {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+    }
 
-.menu li {
-    display: none;
-}
+    .menu li {
+        display: none;
+    }
 
-.menu li:first-child {
-    display: block;
-}
+    .menu li:first-child {
+        display: block;
+    }
 
-.menu li a {
-    display: block;
-    color: #1a1a1a;
-    text-align: center;
-    padding: 8px;
-    text-decoration: none;
-    font-size: 20px;
-}
+    .menu li a {
+        display: block;
+        color: #1a1a1a;
+        text-align: center;
+        padding: 8px;
+        text-decoration: none;
+        font-size: 20px;
+    }
 
-.menu li a:hover {
-    color: #f1f1f1;
-}
+    .menu li a:hover {
+        color: #f1f1f1;
+    }
 
-.responsive li {
-    display: block;
-}
+    .responsive li {
+        display: block;
+    }
 
 /*---------------------------------------------Main Section-------------------------------------*/
+    main {
+        margin: 0 auto;
+        padding: 5px;
+    }
 
     main h2{
         text-align: center;
+        font-size: 25px;
+        padding: 5px;
+        margin-bottom: 2px;
     }
 
     .mainsection {
@@ -80,7 +87,6 @@ nav {
     }
 
 /*---------------------------------Article Section---------------------------*/
-
     .newsarticle {
         border: 1px solid lightgray;
         background-color: #e6fff7;
@@ -104,6 +110,22 @@ nav {
     .newsarticle h5 {
         margin: 0 auto;
     }
+
+    /*------------------------------Current Event-------------------------------*/
+    .currentevents {
+        border-style: dashed;
+        border-width: 2px;
+        background-color: lightgrey;
+        margin: 10px;
+    }
+
+    .events {
+        text-align: center;
+        display: flex;
+        margin: 10px;
+        border: 1px solid lightgray;
+        background-color: #e6fff7;
+    }
     /*-------------------------------Weather Report-----------------------------*/
 
     .weatherreport {
@@ -122,7 +144,7 @@ nav {
 
     .weatherreport h3 {
         text-align: center;
-        font-size: 17px;
+        font-size: 19px;
         border-bottom: none;
         color: white;
         margin: 0 auto;
@@ -132,7 +154,7 @@ nav {
     .tempdetails {
         padding: 15px;
         color: white;
-        font-size: 11px;
+        font-size: 14px;
         border-style: inset;
         border-color: #491d26;
         border-width: 2px;
@@ -166,8 +188,8 @@ nav {
         text-align: center;
         height: 50px;
         font-size: 12px;
-        color: #f1f1f1;
         margin: 0 auto;
+        color: #f1f1f1;
     }
 
     .footerbar {
@@ -181,121 +203,162 @@ nav {
     }
 
     /*-----------------------------Hidden Items-------------------------*/
-
     .weatherforecast {
         display: none;
     }
 
     .weatherforecast h3 {
         padding: 5px;
-    }
+    }*/
 
     .menu.responsive .icon {
         display: none;
     }
 
 /*---------------------------------Gallery Page------------------------------*/
-body h2 {
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+    body h2 {
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
 
-.container {
-    display: grid;
-    flex-direction: 1fr;
-}
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
 
-.flexchild {
-    width: 80%;
-    padding: 8px;
-}
+    .flexchild {
+        width: 70%;
+        padding: 8px;
+        display: block;
+        margin: 0 auto;
+    }
 
-/*--------------------------------Thank You HTML-----------------------------------*/
-.title {
-    font-size: 20px;
-    display: block;
-}
+    figcaption {
+        width: 70%;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
 
-/*------------------------------Storm Gallery Page----------------------------------*/
-form {
-    display: block;
-    border-style: double;
-    border-width: 20px;
-    border-color: #491d26;
-    margin: 0 auto;
-    background-color: #f2f2f2;
-    padding: 20px;
-}
+    .individual {
+        margin-bottom: 10px;
+    }
 
-.data {
-    display: block;
-    padding: 8px;
-}
+    /*--------------------------------Thank You HTML-----------------------------------*/
+    .title {
+        font-size: 20px;
+        display: block;
+    }
 
-form div input {
-    padding: 5px;
-}
+    /*------------------------------Storm Gallery Page----------------------------------*/
+    form {
+        padding: 20px;
+        display: grid;
+    }
 
-.form {
-    padding: 5px;
-}
+    main form h1 {
+        margin: 0 auto;
+        padding: 5px;
+    }
 
-.stormmain {
-    margin: 10px;
-}
+    .info {
+        padding: 10px;
+    }
+
+    .right {
+        float: right;
+    }
+
+    .info1 {
+        padding-top: 25px;
+    }
+
+    .info2 {
+        margin: 0 auto;
+    }
+
+    /*form {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        grid-gap: 16px;
+        border-style: double;
+        border-width: 20px;
+        border-color: #491d26;
+        margin: 0 auto;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+
+    .data {
+        display: block;
+        padding: 8px;
+    }
+
+    form div input {
+        padding: 5px;
+    }
+
+    .form {
+        padding: 5px;
+    }
+
+    .stormmain {
+        margin: 10px;
+    }
 
 
-  /*-------------------------------Home Page--------------------------------*/
-  .hero img {
-    width: 85%;
-    display: block;
-    margin: 0 auto;
-    padding: 15px;
-    padding-top: 30px;
-}
+    /*-------------------------------Home Page--------------------------------*/
+    .hero img {
+        width: 85%;
+        display: block;
+        margin: 0 auto;
+        padding: 15px;
+        padding-top: 30px;
+    }
 
-.homepage {
-    width: 65%;
-    margin: 0 auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-    padding-top: 0;
-}
+    .homepage {
+        width: 65%;
+        margin: 0 auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        padding-top: 0;
+    }
 
-.homepage h3 {
-    color: #004d4d;
-    font-style: bold;
-    font-size: 25px;
-    margin: 0 auto;
-    padding: 10px;
-    text-align: center;
-}
+    .homepage h3 {
+        color: #004d4d;
+        font-style: bold;
+        font-size: 25px;
+        margin: 0 auto;
+        padding: 10px;
+        text-align: center;
+    }
 
-.homepage div {
-    margin: 0 auto;
-    padding: 5px;
-    width: 220px;
-    word-wrap: break-word;
-    text-align: center;
-}
+    .homepage div {
+        margin: 0 auto;
+        padding: 5px;
+        width: 220px;
+        word-wrap: break-word;
+        text-align: center;
+    }
 
-.homepage p {
-    padding: 10px;
-    margin: 10px;
-    border-style: inset;
-    border-width: 10px;
-    border-color: green;
-    background-color: #f1f1f1;
-    width: 220px;
-}
+    .homepage p {
+        padding: 10px;
+        margin: 10px;
+        border-style: inset;
+        border-width: 10px;
+        border-color: green;
+        background-color: #f1f1f1;
+        width: 220px;
+    }
 
-.jsonmotto {
-    font-style: italic;
-}
+    .jsonmotto {
+        font-style: italic;
+    }
 
-.homepage p img {
-    width: 220px;
-}
+    .homepage p img {
+        width: 220px;
+    }
