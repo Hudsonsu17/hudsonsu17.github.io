@@ -32,35 +32,33 @@
         visibility: hidden;
     }
 }
-/*-------------------Header Section--------------------*/
-/*-------------------------Weather forecast table------------------*/
-/* .weatherforecast h3 {
+/*-------------------Storm Form Section--------------------*/
+.right {
+    float: none;
+}
+
+form h1 {
     text-align: center;
 }
 
-.weatherforecast {
+.info {
+    display: grid;
+    grid-template-columns: 400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.storminfo {
+    margin-bottom: 15px;
+}
+
+.button {
     display: block;
-    margin-bottom: 35px;
+    margin: 0 auto;
+    width: 30%;
 }
-
-.weathertable {
-     border-collapse: collapse;
-     margin: 0 auto;
- }
-
- table, th, td {
-     border-style: ridge;
-     border-color: black;
-     border-width: 3px;
-     padding: 5px;
- }
-
-.weekday {
-    text-align: center;
-    vertical-align: middle;
-    background-color: #fff037;
-}
-
-.temp {
-    text-align: center;
+/*-------------------------Weather forecast table------------------*/
+/* .map {
+    display: flex;
+    justify-content: flex-end;
 } */

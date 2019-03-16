@@ -53,93 +53,101 @@
         <form action="thanks.html">
             <h1>Storm Report Form</h1>
             <hr>
-            <div class="info">
-                <label class="data">First Name:</label>
-                <input type="text" name="first" required minlength="5" pattern=".{5,}" tabindex="1" class="right">
-            </div>
-            <div class="info">
-                <label class="data">Last Name:</label>
-                <input type="text" name="last" required minlength="5" pattern=".{5,}" tabindex="2" class="right">
-            </div>
-            <div class="info">
-                <label class="data">Email Address:</label>
-                <input type="email" name="email" placeholder="johnsmith@gmail.com" required minlength="10" tabindex="3" class="right">
-            </div>
-            <div class="info">
-                <label class="data">Phone Number:</label>
-                <input type="tel" name="telephone" required minlength="9" tabindex="4" class="right">
-            </div>
-            <div class="info">
-                <label class="data">Zip Code:</label>
-                <input type="number" name="areacode" required minlength="5" tabindex="5" class="right">
-            </div>
-            <div class="info">
-                <label class="data">Storm Date:</label>
-                <input type="date" name="date" tabindex="6" class="right">
-            </div>
-            <div class="info">
-                <label class="data">Type of Storm:</label>
-                <input type="text" name="storm" list="l1" tabindex="7" class="right">
-                <datalist id="l1">
-                    <option>Flashflood</option>
-                    <option>Hail</option>
-                    <option>Hurricane</option>
-                    <option>Thunderstorm</option>
-                    <option>Tornado</option>
-                </datalist>
-            </div>
-            <div class="info">
-                <label class="data">Storm Severity Level (1=tamed, 10=severe):</label>
-                <input type="range" name="level" id="rating" value="5" min="0" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"
-                    tabindex="8">
-                <span id="ratingvalue">5</span>
-            </div>
-            <div class="info">
-                <label class="data">Storm Region:</label>
-                <select name="region" required tabindex="9">
-                    <option value="Select Option" disabled selected>Select Option...</option>
-                    <option value="Fish Haven">Fish Haven</option>
-                    <option value="Preston">Preston</option>
-                    <option value="Soda Springs">Soda Springs</option>
-                </select>
-            </div>
-            <div class="info2">
-                <label class="data">
-                    <u>User In-Danger Level:</u>
-                </label>
-                <input type="radio" name="danger1" id="r1" tabindex="10">
-                <label for="r1">Yes</label>
-                <input type="radio" name="danger2" id="r2" tabindex="11">
-                <label for="r2">Maybe</label>
-                <input type="radio" name="danger3" id="r3" tabindex="12">
-                <label for="r3">No</label>
-            </div>
-            <div class="info">
-                <label class="data">Please provide any additional information or comments:</label>
-                <textarea name="comments" maxlength="300" rows="5" tabindex="13"></textarea>
-            </div>
-            <input class="info" type="submit" name="submit">
+
+            <fieldset class="personal">    
+            <legend>Personal Information</legend>
+                <div class="info">
+                    <label class="data">First Name:</label>
+                    <input type="text" name="first" required minlength="5" pattern=".{5,}" tabindex="1" class="right">
+                </div>
+                <div class="info">
+                    <label class="data">Last Name:</label>
+                    <input type="text" name="last" required minlength="5" pattern=".{5,}" tabindex="2" class="right">
+                </div>
+                <div class="info">
+                    <label class="data">Email Address:</label>
+                    <input type="email" name="email" placeholder="johnsmith@gmail.com" required minlength="10" tabindex="3" class="right">
+                </div>
+                <div class="info">
+                    <label class="data">Phone Number:</label>
+                    <input type="tel" name="telephone" required minlength="9" tabindex="4" class="right">
+                </div>
+                <div class="info">
+                    <label class="data">Zip Code:</label>
+                    <input type="number" name="areacode" required minlength="5" tabindex="5" class="right">
+                </div>
+            </fieldset>
+
+            <fieldset class="storminfo">
+                <legend>Storm Information</legend>
+                <div class="info">
+                    <label class="data">Storm Date:</label>
+                    <input type="date" name="date" tabindex="6" class="right">
+                </div>
+                <div class="info">
+                    <label class="data">Type of Storm:</label>
+                    <input type="text" name="storm" list="l1" tabindex="7" class="right">
+                    <datalist id="l1">
+                        <option>Flashflood</option>
+                        <option>Hail</option>
+                        <option>Hurricane</option>
+                        <option>Thunderstorm</option>
+                        <option>Tornado</option>
+                    </datalist>
+                </div>
+                <div class="info">
+                    <label class="data">Storm Severity Level (1=tamed, 10=severe):</label>
+                    <input type="range" name="level" id="rating" value="5" min="0" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"
+                        tabindex="8">
+                    <span id="ratingvalue">5</span>
+                </div>
+                <div class="info">
+                    <label class="data">Storm Region:</label>
+                    <select name="region" required tabindex="9">
+                        <option value="Select Option" disabled selected>Select Option...</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                    </select>
+                </div>
+                <div class="info2">
+                    <label class="data">
+                        <u>User In-Danger Level:</u>
+                    </label>
+                    <input type="radio" name="danger1" id="r1" tabindex="10">
+                    <label for="r1">Yes</label>
+                    <input type="radio" name="danger2" id="r2" tabindex="11">
+                    <label for="r2">Maybe</label>
+                    <input type="radio" name="danger3" id="r3" tabindex="12">
+                    <label for="r3">No</label>
+                </div>
+                <div class="info">
+                    <label class="data">Please provide any additional information or comments:</label>
+                    <textarea name="comments" maxlength="300" rows="5" tabindex="13"></textarea>
+                </div>
+            </fieldset>
+            <input class="button" type="submit" name="submit" value="Submit Report">
         </form>
     </main>
 
     <main>
-    <article class="contactinfo">
-        <h4>The Wonders of Southern Idaho Website</h4>
-        <p>30 N 1st E
-            <br> Preston, ID 83263</p>
-        <p>Phone: 208-555-5555
-            <br> Email: wondersofsi@gmail.com</p>
-        <div class="map">
-            <iframe src="https://www.google.com/maps/embed/v1/view?zoom=12&center=42.0963%2C-111.8766&key=AIzaSyBraCrN9eDxKmBetKaWsMejLTV6sKG3WDs"
-                style="border:0" allowfullscreen></iframe>
-        </div>
-    </article>
+        <article class="contactinfo">
+            <h4>The Wonders of Southern Idaho Website</h4>
+            <p>30 N 1st E
+                <br> Preston, ID 83263</p>
+            <p>Phone: 208-555-5555
+                <br> Email: wondersofsi@gmail.com</p>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed/v1/view?zoom=12&center=42.0963%2C-111.8766&key=AIzaSyBraCrN9eDxKmBetKaWsMejLTV6sKG3WDs"
+                    style="border:0" allowfullscreen></iframe>
+            </div>
+        </article>
     </main>
 
-    <footer class="stormfoot">
+    <footer>
         <p class="footerbar">&copy;2019 The Wonders of Southern Idaho |
             <a href="https://openweathermap.org">OpenWeatherMap</a> | Suzannah Hudson</p>
-        <div id="currentdate"></div>
+        <div id="currentdate" class="currentdate"></div>
     </footer>
 
     <script src="scripts/currentdate.js"></script>
