@@ -263,8 +263,7 @@ header{
     /*------------------------------Storm Gallery Page----------------------------------*/
     form {
         padding: 20px;
-        /*display: grid;*/
-       width: 100%;
+        width: 100%;
     }
 
     legend {
@@ -319,7 +318,6 @@ header{
     }
 
     .right {
-        float: right;
         width: 70%;
     }
 
