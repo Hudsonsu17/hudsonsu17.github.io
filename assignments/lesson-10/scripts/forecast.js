@@ -5,7 +5,6 @@ forecastRequest.send();
 
 forecastRequest.onload = function () {
     let forecastData = JSON.parse(forecastRequest.responseText);
-    console.log(forecastData);
 
     let m = new Date();
     let s = new Array(14);

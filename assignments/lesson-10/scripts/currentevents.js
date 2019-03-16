@@ -13,6 +13,14 @@ request.onload = function () {
     for (let i = 0; i < preston.length; i++) {
         if (preston[i].name == 'Preston') {
             events.textContent = preston[i].events;
+            let town = preston[i].events;
+
+            for (let i = 0; i < town.length; i++) {
+                let eventInfo = document.createElement('li');
+
+                eventInfo.textContent = town[i];
+                events.appendChild(eventsInfo);
+            }
         }
     }
 
