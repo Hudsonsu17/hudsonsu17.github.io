@@ -221,17 +221,19 @@
     grid-gap: 10px;
 }
 
-.flexchild:hover {
+.individual:hover {
     box-shadow: 0 0 50px #333;
 }
 
 .flexchild {
-    width: 100%;
+    width: 90%;
 }
 
 .individual {
     width: 90%;
     font-size: 13px;
+    display: block;
+    margin: 0 auto;
 }
 
 /*--------------------------------Thank You HTML-----------------------------------*/

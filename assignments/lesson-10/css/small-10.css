@@ -122,9 +122,15 @@ header{
     .events {
         text-align: center;
         display: flex;
-        margin: 10px;
+        flex-direction: column;
+        margin: 0 auto;
         border: 1px solid lightgray;
         background-color: #e6fff7;
+        width: 50%;
+    }
+
+    .events h4 {
+        padding: 10px;
     }
     /*-------------------------------Weather Report-----------------------------*/
 
@@ -225,6 +231,8 @@ header{
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 10px;
+        margin-bottom: 20px;
+        margin-top: 20px;
     }
 
     .flexchild {
@@ -239,6 +247,7 @@ header{
         text-align: center;
         display: block;
         margin: 0 auto;
+        margin-bottom: 10px;
     }
 
     .individual {

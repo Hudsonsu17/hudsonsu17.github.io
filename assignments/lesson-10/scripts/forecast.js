@@ -7,7 +7,7 @@ forecastRequest.onload = function () {
     let forecastData = JSON.parse(forecastRequest.responseText);
 
     let m = new Date();
-    let s = new Array(14);
+    let s = new Array(11);
     s[0] = "Sun";
     s[1] = "Mon";
     s[2] = "Tue";
@@ -19,9 +19,6 @@ forecastRequest.onload = function () {
     s[8] = "Mon";
     s[9] = "Tue";
     s[10] = "Wed";
-    s[11] = "Thu";
-    s[12] = "Fri";
-    s[13] = "Sat";
 
     let n = s[m.getDay()];
     document.getElementById('current-day1').innerHTML = n;

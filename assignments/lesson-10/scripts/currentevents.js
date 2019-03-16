@@ -7,31 +7,25 @@ request.responseType = 'json';
 request.send();
 
 request.onload = function () {
-    let prestondata = request.response;
-    let preston = prestondata['towns'];
+    let getData = request.response;
+    let towns = getData['towns'];
 
-    for (let i = 0; i < preston.length; i++) {
-        if (preston[i].name == 'Preston') {
-            events.textContent = preston[i].events;
-            let town = preston[i].events;
+    for (let i = 0; i < towns.length; i++) {
+        if (towns[i].name == "Preston") {
+            let prestonEvents = towns[i].events;
+            let eventName = 0; 
 
-            for (let i = 0; i < town.length; i++) {
-                let eventInfo = document.createElement('li');
+            for (let j = 0; j < prestonEvents.length; j++) {
+                let event = prestonEvents[eventName];
+                eventName++;
 
-                eventInfo.textContent = town[i];
-                events.appendChild(eventsInfo);
+            let eventSection = document.createElement('article');
+            let h4List = document.createElement('h4');
+            h4List.textContent = event;
+            eventSection.appendChild(h4List);
+            events.appendChild(eventSection);
+  
             }
         }
     }
-
-    // request.onload = function () {
-    //     let fhdata = request.response;
-    //     let fishhaven = fhdata['towns'];
-
-    //     for (let i = 0; i < fishhaven.length; i++) {
-    //         if (fishhaven[i].name == 'Fish Haven') {
-    //             events.textContent = fishhaven[i].events;
-    //         }
-    //     }
-    // }
 }
