@@ -1,0 +1,60 @@
+@media only screen and (min-width: 460px){
+/*-----------------------------Gallery Page--------------------------------*/
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+/*------------------------Navigation Menu----------------------------*/    
+    nav {
+        max-width: 100%; 
+    }
+
+    .menu {
+        flex-direction: row;
+        justify-content: center; 
+    }
+
+    nav li {
+        padding: 0;
+        position: relative;
+        align-content: center; 
+        display: inline-block; 
+    }
+
+    nav .dropdown{
+        display: inline-block;
+    }
+
+    nav li:first-child {
+        display: none;
+    }
+
+    .dropbtn {
+        visibility: hidden;
+    }
+}
+/*-------------------Storm Form Section--------------------*/
+form h1 {
+    text-align: center;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.storminfo {
+    margin-bottom: 15px;
+}
+
+.button {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+}
+/*-------------------------Weather forecast table------------------*/
+/* .map {
+    display: flex;
+    justify-content: flex-end;
+} */

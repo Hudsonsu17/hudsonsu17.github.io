@@ -1,0 +1,310 @@
+@media only screen and (min-width: 960px)  { 
+
+/*------------------------------------------Header-----------------------------------------*/
+    .headerimage {
+        padding: 25px;
+    }
+
+    .headings {
+        vertical-align: middle;
+        margin: 10px;
+    }
+
+    header{
+        background-color: #006666;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .motto{
+        color: white;
+        font-size: 20px;
+        font-style: italic;
+        font-family: cursive;
+        margin: 10px;
+    }
+
+    header h1{
+        color: white;
+        font-size: 50px;
+        margin: 15px;
+    }
+
+    /*-------------------------------------- Navigation Menu ----------------------------------*/
+    .menu li:first-child {
+        display: none;
+    }
+
+    .menu li {
+        display: block;
+        flex: 1 1 auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu {
+        flex-direction: row;
+    }
+    
+    a.active {
+        color: white;
+    }
+
+/*--------------------------------------Main-------------------------------------------*/
+    main {
+        width: 950px;
+    }
+
+    main h2{
+        font-size: 30px;
+    }
+
+    .mainsection {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    /*-----------------Article Section-----------------------*/
+    .newsarticle {
+        margin: 0 auto;
+        margin-bottom: 10px;
+        width: 915px;
+    }
+
+    .newsarticle h3 {
+        font-size: 20px;
+        margin-right: 25px;
+        text-align: right;
+    }
+
+    .newsarticle h5 {
+        margin-right: 25px;
+        text-align: right;
+    }
+
+    .article {
+        padding: 25px;
+    }
+    /*------------------------------Current Event-------------------------------*/
+    .currentevents {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    /*--------------------------Weather Report-------------------------------*/
+    .weatherreport h3 {
+        font-size: 25px;
+        border-bottom: none;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    .tempdetails {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    /*----------------------------Images---------------------------------------*/
+    .newsphoto {
+        float: left;
+        margin: 10px;
+    }
+
+    /*-------------------------------Contact Info------------------------*/
+    .contactinfo {
+        border: 1px solid lightgray;
+        background-color: #e6fff7;
+        padding: 5px;
+        display: flex;
+    }
+
+    .contactinfo p {
+        padding: 5px;
+        display: flex;
+    }
+
+    .contactinfo h4 {
+        padding: 5px;
+        display: flex;
+    }
+
+    .map {
+        width: 300px;
+        height: auto;
+        padding: 10px;
+    }
+
+    /*-----------------------------------Footer------------------------------------*/
+
+    footer{
+        background-color: olivedrab;
+        text-align: center;
+        width: 950px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        color: #f1f1f1;
+        clear: right;
+        padding-bottom: 8px;
+    }
+
+    .footerbar {
+        margin: 0 auto;
+        padding-top: 8px;
+        font-size: 16px;
+    }
+
+    .currentdate {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+    /*----------------------------------Weather Forecast Table-------------------*/
+   .weatherforecast h3 {
+       text-align: center;
+   }
+
+   .weatherforecast {
+       display: block;
+       margin-bottom: 35px;
+   }
+
+   .weathertable {
+        border-collapse: collapse;
+        margin: 0 auto;
+    }
+
+    table, th, td {
+        border-style: ridge;
+        border-color: black;
+        border-width: 3px;
+        padding: 5px;
+    }
+
+   .weekday {
+       text-align: center;
+       vertical-align: middle;
+       background-color: #fff037;
+   }
+
+   .temp {
+       text-align: center;
+       padding: 10px;
+   }
+
+/*---------------------------------Weather Gallery--------------------------------*/
+.galleryh2 {
+    font-size: 40px;
+    padding: 20px;
+}
+
+.weathergrid {
+    margin: 0 auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0;
+    margin: 0 auto;
+}
+
+.individual:hover {
+    box-shadow: 0 0 50px #333;
+}
+
+.flexchild {
+    width: 90%;
+}
+
+.individual {
+    width: 90%;
+    font-size: 13px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*--------------------------------Thank You HTML-----------------------------------*/
+.title {
+    text-align: center;
+    margin: 169px;
+    font-size: 40px;
+}
+
+/*------------------------------Storm Form Page----------------------------------*/
+form {
+    display: grid;
+}
+
+textarea {
+    width: 100%;
+    height: 10rem;
+    max-width: 50rem;
+    border-radius: 8px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+legend {
+    font-size: 20px;
+}
+
+.button {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+/*---------------------------------Home Page---------------------------*/
+.hero img {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    width: 65%;
+    padding: 15px;
+    padding-top: 30px;
+}
+
+.homepage {
+    width: 65%;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 15px;
+    padding-top: 0;
+}
+
+.homepage h3 {
+    color: #004d4d;
+    font-style: bold;
+    font-size: 25px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.homepage div {
+    margin: 0 auto;
+    padding: 5px;
+    width: 220px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.jsonmotto {
+    font-style: italic;
+}
+
+.homepage p img {
+    width: 220px;
+}
+  }

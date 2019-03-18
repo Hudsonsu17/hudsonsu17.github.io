@@ -1,0 +1,377 @@
+* {       
+    margin: 0;
+    padding: 0;
+}
+    /*----------------------------------------Heading-------------------------------------------*/
+header{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        background-color: #006666;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 10px;
+    }
+
+    .motto{
+        color:white;
+        font-size: 15px;
+        font-style: italic;
+        font-family: cursive;
+    }
+
+    header h1{
+        color: white;
+        font-size: 35px;
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+/*-----------------------------------------Navigation Menu----------------------------------------*/
+    nav {
+        background-color: olivedrab;;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .active {
+        background-color: #55711c;
+        color: white;
+    }
+
+    .menu {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu li {
+        display: none;
+    }
+
+    .menu li:first-child {
+        display: block;
+    }
+
+    .menu li a {
+        display: block;
+        color: #1a1a1a;
+        text-align: center;
+        padding: 8px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .menu li a:hover {
+        color: #f1f1f1;
+    }
+
+    .responsive li {
+        display: block;
+    }
+
+/*---------------------------------------------Main Section-------------------------------------*/
+    main {
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+    main h2{
+        text-align: center;
+        font-size: 25px;
+        padding: 5px;
+        margin-bottom: 2px;
+    }
+
+    .mainsection {
+        position: relative;
+    }
+
+/*---------------------------------Article Section---------------------------*/
+    .newsarticle {
+        border: 1px solid lightgray;
+        background-color: #e6fff7;
+        padding: 15px;
+        margin: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .newsphoto {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+    }
+
+    .newsarticle h3 {
+        margin: 0 auto;
+    }
+
+    .newsarticle h5 {
+        margin: 0 auto;
+    }
+
+    /*------------------------------Current Event-------------------------------*/
+    .currentevents {
+        border-style: dashed;
+        border-width: 2px;
+        background-color: lightgrey;
+        margin: 10px;
+    }
+
+    .events {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        border: 1px solid lightgray;
+        background-color: #e6fff7;
+        width: 50%;
+    }
+
+    .events h4 {
+        padding: 10px;
+    }
+    /*-------------------------------Weather Report-----------------------------*/
+
+    .weatherreport {
+        position: absolute;
+        top: 20px;
+        left: 50px;
+        border-style: ridge;
+        border-color: #491d26;
+        border-width: 5px;
+        box-shadow: 0 0 30px #fff;
+        background-color: #803342;
+        opacity: .90;
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .weatherreport h3 {
+        text-align: center;
+        font-size: 19px;
+        border-bottom: none;
+        color: white;
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+    .tempdetails {
+        padding: 15px;
+        color: white;
+        font-size: 14px;
+        border-style: inset;
+        border-color: #491d26;
+        border-width: 2px;
+    }
+
+    /*-----------------------------------Contact Section-------------------------------------*/
+
+    .contactinfo {
+        border: 1px solid lightgray;
+        background-color: #e6fff7;
+        padding: 15px;
+        margin: 0 auto;
+    }
+
+    .map {
+        width: 350px;
+    }
+
+    /*----------------------------------Images-----------------------------------*/
+
+    .heroimage{
+        max-width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /*----------------------------------Footer-------------------------*/
+
+    footer{
+        background-color: olivedrab;
+        text-align: center;
+        height: 50px;
+        font-size: 12px;
+        margin: 0 auto;
+        color: #f1f1f1;
+    }
+
+    .footerbar {
+        margin: 0 auto;
+        padding-top: 8px;
+    }
+
+    .date {
+        margin: 0 auto;
+        padding-bottom: 8px;
+    }
+
+    /*-----------------------------Hidden Items-------------------------*/
+    .weatherforecast {
+        display: none;
+    }
+
+    .weatherforecast h3 {
+        padding: 5px;
+    }*/
+
+    .menu.responsive .icon {
+        display: none;
+    }
+
+/*---------------------------------Gallery Page------------------------------*/
+    body h2 {
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .flexchild {
+        width: 70%;
+        padding: 8px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    figcaption {
+        width: 70%;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .individual {
+        margin-bottom: 10px;
+    }
+
+    /*--------------------------------Thank You HTML-----------------------------------*/
+    .title {
+        font-size: 20px;
+        display: block;
+    }
+
+    /*------------------------------Storm Gallery Page----------------------------------*/
+    form {
+        padding: 20px;
+        width: 100%;
+    }
+
+    legend {
+        padding: 5px;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+    }
+
+    .personal {
+        border-style: inset;
+        border-width: 4px;
+        border-color: #803342;
+        border-radius: 30px;
+        margin: 0 auto;
+        width: 60%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        padding: 10px;
+    }
+    
+    .storminfo {
+        border-style: inset;
+        border-width: 4px;
+        border-color: #803342;
+        border-radius: 30px;
+        margin: 0 auto;
+        width: 60%;
+        padding: 10px;
+    }
+
+    main form h1 {
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+    .info {
+        padding: 10px;
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .info2 {
+        padding-left: 8px;
+        margin: 5px;
+    }
+
+    .data {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        font-size: 15px;
+        padding-bottom: 2px;
+        width: 70%;
+    }
+
+    .right {
+        width: 70%;
+    }
+
+    /*-------------------------------Home Page--------------------------------*/
+    .hero img {
+        width: 85%;
+        display: block;
+        margin: 0 auto;
+        padding: 15px;
+        padding-top: 30px;
+    }
+
+    .homepage {
+        width: 65%;
+        margin: 0 auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        padding-top: 0;
+    }
+
+    .homepage h3 {
+        color: #004d4d;
+        font-style: bold;
+        font-size: 25px;
+        margin: 0 auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .homepage div {
+        margin: 0 auto;
+        padding: 5px;
+        width: 220px;
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+    .homepage p {
+        padding: 10px;
+        margin: 10px;
+        border-style: inset;
+        border-width: 10px;
+        border-color: green;
+        background-color: #f1f1f1;
+        width: 220px;
+    }
+
+    .jsonmotto {
+        font-style: italic;
+    }
+
+    .homepage p img {
+        width: 220px;
+    }
