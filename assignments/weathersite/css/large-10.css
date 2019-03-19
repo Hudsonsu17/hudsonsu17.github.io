@@ -131,6 +131,12 @@
         padding: 15px;
     }
 
+    .weatherreport {
+        position: absolute;
+        left: 60px;
+        bottom: 150px;
+    }
+
     .tempdetails {
         padding: 15px;
         font-size: 16px;
@@ -334,6 +340,6 @@ legend {
 }
 
 .notes {
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
   }

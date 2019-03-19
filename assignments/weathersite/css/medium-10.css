@@ -20,7 +20,7 @@
         display: inline-block; 
     }
 
-    nav .dropdown{
+    nav .dropdown {
         display: inline-block;
     }
 
@@ -76,15 +76,11 @@ textarea {
 .right {
     width: 80%;
 }
+
+.weatherreport {
+    position: absolute;
+    left: 50px;
+    bottom: 140px;
+    width: 22%;
 }
-/* .homepage {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-} */
-
-
-/* .map {
-    display: flex;
-    justify-content: flex-end;
-} */
+}
