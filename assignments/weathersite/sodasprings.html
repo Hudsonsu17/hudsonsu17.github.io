@@ -53,6 +53,9 @@
         <h2 class="prestonh2">Soda Springs, Idaho</h2>
         <section class="mainsection">
             <picture>
+                <source media="(max-width: 460px)" srcset="images/geysersmall.jpg">
+                <source media="(max-width: 800px)" srcset="images/geysermed.jpg">
+                <source media="(min-width: 801px)" srcset="images/geyser.jpg">
                 <img class="heroimage" src="images/geyser.jpg" alt="ocean photo">
             </picture>
             <section class="weatherreport">
@@ -81,26 +84,26 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class ="temp">
+                        <td class="temp">
                             <img id="foreimg1" src="" alt="">
                             <p id="forecast1"></p>
-                            </td>
-                        <td class ="temp">
+                        </td>
+                        <td class="temp">
                             <img id="foreimg2" src="" alt="">
                             <p id="forecast2"></p>
-                            </td>
-                        <td class ="temp">
+                        </td>
+                        <td class="temp">
                             <img id="foreimg3" src="" alt="">
                             <p id="forecast3"></p>
-                            </td>
-                        <td class ="temp" >
+                        </td>
+                        <td class="temp">
                             <img id="foreimg4" src="" alt="">
                             <p id="forecast4"></p>
-                            </td>
-                        <td class ="temp">
+                        </td>
+                        <td class="temp">
                             <img id="foreimg5" src="" alt="">
                             <p id="forecast5"></p>
-                            </td>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -110,7 +113,10 @@
             <img src="images/sodawatersmall.jpg" alt="soda springs geyser" class="sodaphoto">
             <h3>Geyser Park in Soda Springs, Idaho</h3>
             <h5>City of Soda Springs</h5>
-            <p class="article">Soda Springs has the only captive geyser in the world. It was discovered in an attempt to find a hot water source for a swimming pool. On November 30, 1937, the drill went down 315 feet and unleashed the geyser. The extreme pressure is caused by carbon dioxide gas mixing with water in an underground chamber. It is now capped and controlled by a timer. It erupts every hour on the hour. The geyser reaches heights of 100 feet year round.</p>
+            <p class="article">Soda Springs has the only captive geyser in the world. It was discovered in an attempt to find a hot water source
+                for a swimming pool. On November 30, 1937, the drill went down 315 feet and unleashed the geyser. The extreme
+                pressure is caused by carbon dioxide gas mixing with water in an underground chamber. It is now capped and
+                controlled by a timer. It erupts every hour on the hour. The geyser reaches heights of 100 feet year round.</p>
             <small>
                 <a href="http://www.sodaspringsid.com/recreation/geyser_park/index.php" class="readmore">Click here to read more...</a>
             </small>
@@ -119,7 +125,8 @@
         <section class="currentevents">
             <div class="eventsspot">
                 <h2>Upcoming Events in Soda Springs</h2>
-                <div id="events" class="events"></div><br>
+                <div id="events" class="events"></div>
+                <br>
             </div>
         </section>
 
@@ -137,7 +144,8 @@
     </main>
 
     <footer>
-        <p class="footerbar">&copy;2019 The Wonders of Southern Idaho | <a href="https://openweathermap.org">OpenWeatherMap</a> | Suzannah Hudson</p>
+        <p class="footerbar">&copy;2019 The Wonders of Southern Idaho |
+            <a href="https://openweathermap.org">OpenWeatherMap</a> | Suzannah Hudson</p>
         <div id="currentdate" class="currentdate"></div>
     </footer>
 

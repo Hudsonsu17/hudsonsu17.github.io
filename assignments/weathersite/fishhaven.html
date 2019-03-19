@@ -53,6 +53,9 @@
         <h2 class="prestonh2">Fish Haven, Idaho</h2>
         <section class="mainsection">
             <picture>
+                <source media="(max-width: 460px)" srcset="images/fishherosmall.jpg">
+                <source media="(max-width: 800px)" srcset="images/fishheromed.jpg">
+                <source media="(min-width: 801px)" srcset="images/fishhero.jpg">
                 <img class="heroimage" src="images/fishhero.jpg" alt="ocean photo">
             </picture>
             <section class="weatherreport">
@@ -81,26 +84,26 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td class ="temp">
+                        <td class="temp">
                             <img id="foreimg1" src="" alt="">
                             <p id="forecast1"></p>
-                            </td>
-                        <td class ="temp">
+                        </td>
+                        <td class="temp">
                             <img id="foreimg2" src="" alt="">
                             <p id="forecast2"></p>
-                            </td>
-                        <td class ="temp">
+                        </td>
+                        <td class="temp">
                             <img id="foreimg3" src="" alt="">
                             <p id="forecast3"></p>
-                            </td>
-                        <td class ="temp" >
+                        </td>
+                        <td class="temp">
                             <img id="foreimg4" src="" alt="">
                             <p id="forecast4"></p>
-                            </td>
-                        <td class ="temp">
+                        </td>
+                        <td class="temp">
                             <img id="foreimg5" src="" alt="">
                             <p id="forecast5"></p>
-                            </td>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -111,20 +114,21 @@
             <h2>Little Fish Haven Idaho is Paradise for Residents</h2>
             <h3>Deseret News Utah</h3>
             <h5>Kurt Friedemann </h5>
-            <p class="article">It's an undiscovered paradise. Most people who drive by recognize the raw beauty of a place ringed by high desert mountains and bordered by the shores of a vast natural lake. <br>
-
-                In winter the hills outside this small paradise echo with the sharp whine of snow machines and in the summer thousands of tourists ply the lake's bright blue waters with water skis or fishing poles. <br>
-                
-                But they don't live there. It's different living in Fish Haven.</p>
-                <small>
-                    <a href="https://www.deseretnews.com/article/800677/Little-Fish-Haven-Idaho-is-paradise-for-residents.html" class="readmore">Click here to read more...</a>
-                </small>
+            <p class="article">It's an undiscovered paradise. Most people who drive by recognize the raw beauty of a place ringed by high desert
+                mountains and bordered by the shores of a vast natural lake.
+                <br> In winter the hills outside this small paradise echo with the sharp whine of snow machines and in the summer
+                thousands of tourists ply the lake's bright blue waters with water skis or fishing poles.
+                <br> But they don't live there. It's different living in Fish Haven.</p>
+            <small>
+                <a href="https://www.deseretnews.com/article/800677/Little-Fish-Haven-Idaho-is-paradise-for-residents.html" class="readmore">Click here to read more...</a>
+            </small>
         </article>
 
         <section class="currentevents">
             <div class="eventsspot">
                 <h2>Upcoming Events in Fish Haven</h2>
-                <div id="events" class="events"></div><br>
+                <div id="events" class="events"></div>
+                <br>
             </div>
         </section>
 
@@ -142,7 +146,8 @@
     </main>
 
     <footer>
-        <p class="footerbar">&copy;2019 The Wonders of Southern Idaho | <a href="https://openweathermap.org">OpenWeatherMap</a> | Suzannah Hudson</p>
+        <p class="footerbar">&copy;2019 The Wonders of Southern Idaho |
+            <a href="https://openweathermap.org">OpenWeatherMap</a> | Suzannah Hudson</p>
         <div id="currentdate" class="currentdate"></div>
     </footer>
 

@@ -49,11 +49,14 @@
         </ul>
     </nav>
 
-
-
     <section class="hero">
         <h1>Welcome to the Wonders of Southern Idaho!</h1>
-        <img src="images/homepage.jpg" alt="home page photo">
+        <picture>
+            <source media="(max-width: 460px)" srcset="images/homepagesmall.jpg">
+            <source media="(max-width: 800px)" srcset="images/homepagemed.jpg">
+            <source media="(min-width: 801px)" srcset="images/homepage.jpg">
+            <img class="heroimage" src="images/homepage.jpg" alt="ocean photo">
+        </picture>
     </section>
 
     <article class='homepage'>
@@ -75,7 +78,8 @@
     </main>
 
     <footer>
-        <p class="footerbar">&copy;2019 The Wonders of Southern Idaho | <a href="https://openweathermap.org">OpenWeatherMap</a> | Suzannah Hudson</p>
+        <p class="footerbar">&copy;2019 The Wonders of Southern Idaho |
+            <a href="https://openweathermap.org">OpenWeatherMap</a> | Suzannah Hudson</p>
         <div id="currentdate" class="currentdate"></div>
     </footer>
 
