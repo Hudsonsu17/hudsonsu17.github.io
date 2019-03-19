@@ -96,6 +96,15 @@ header{
         margin-bottom: 20px;
     }
 
+    .sodaarticle {
+        border: 1px solid lightgray;
+        background-color: #e6fff7;
+        padding: 15px;
+        margin: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
     .newsphoto {
         display: block;
         margin-left: auto;
@@ -330,6 +339,11 @@ header{
         padding-top: 30px;
     }
 
+    .hero h1 {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
     .homepage {
         width: 65%;
         margin: 0 auto;
@@ -350,7 +364,15 @@ header{
         text-align: center;
     }
 
-    .homepage div {
+    .notes {
+        margin: 0 auto;
+        padding: 5px;
+        width: 220px;
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+    .notes1 {
         margin: 0 auto;
         padding: 5px;
         width: 220px;
@@ -370,6 +392,11 @@ header{
 
     .jsonmotto {
         font-style: italic;
+        margin: 0 auto;
+        padding: 5px;
+        width: 220px;
+        word-wrap: break-word;
+        text-align: center;
     }
 
     .homepage p img {

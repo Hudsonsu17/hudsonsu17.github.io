@@ -18,8 +18,11 @@ request.onload = function () {
             let motto = document.createElement('div');
             motto.setAttribute("class", "jsonmotto");
             let year = document.createElement('div');
+            year.setAttribute("class", "notes1");
             let population = document.createElement('div');
+            population.setAttribute("class", "notes1");
             let rainfall = document.createElement('div');
+            rainfall.setAttribute("class", "notes1");
             let x = document.createElement("img");
             x.setAttribute("src", "images/preston.jpg");
             x.setAttribute("alt", "Preston Town");
@@ -45,8 +48,11 @@ request.onload = function () {
             let motto = document.createElement('div');
             motto.setAttribute("class", "jsonmotto");
             let year = document.createElement('div');
+            year.setAttribute("class", "notes1");
             let population = document.createElement('div');
+            population.setAttribute("class", "notes1");
             let rainfall = document.createElement('div');
+            rainfall.setAttribute("class", "notes1");
             let x = document.createElement("img");
             x.setAttribute("src", "images/fishhaven.jpg");
             x.setAttribute("alt", "Fish Haven Town");
@@ -72,8 +78,11 @@ request.onload = function () {
             let motto = document.createElement('div');
             motto.setAttribute("class", "jsonmotto");
             let year = document.createElement('div');
+            year.setAttribute("class", "notes");
             let population = document.createElement('div');
+            population.setAttribute("class", "notes");
             let rainfall = document.createElement('div');
+            rainfall.setAttribute("class", "notes");
             let x = document.createElement("img");
             x.setAttribute("src", "images/sodasprings.jpg");
             x.setAttribute("alt", "Soda Springs Town");

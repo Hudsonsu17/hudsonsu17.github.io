@@ -54,6 +54,17 @@ form h1 {
     width: 30%;
 }
 /*-------------------------Weather forecast table------------------*/
+.newsarticle h2 {
+    text-align: left;
+}
+
+/* .homepage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+} */
+
+
 /* .map {
     display: flex;
     justify-content: flex-end;
