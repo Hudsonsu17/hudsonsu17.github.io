@@ -31,7 +31,6 @@
     .dropbtn {
         visibility: hidden;
     }
-}
 /*-------------------Storm Form Section--------------------*/
 form h1 {
     text-align: center;
@@ -58,6 +57,26 @@ form h1 {
     text-align: left;
 }
 
+textarea {
+    width: 100%;
+}
+
+.personal {
+    width: 60%;
+}
+
+.info2 {
+    padding-left: 8px;
+}
+
+.storminfo {
+    width: 60%;
+}
+
+.right {
+    width: 80%;
+}
+}
 /* .homepage {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

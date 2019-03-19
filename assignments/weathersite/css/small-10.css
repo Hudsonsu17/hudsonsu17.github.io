@@ -272,12 +272,18 @@ header{
     /*------------------------------Storm Gallery Page----------------------------------*/
     form {
         padding: 20px;
-        width: 100%;
+        width: 90%;
     }
 
     legend {
         padding: 5px;
         font-family: "Comic Sans MS", cursive, sans-serif;
+    }
+
+    textarea {
+        width: 100%;
+        height: 100px;
+        border-radius: 8px;
     }
 
     .personal {
@@ -286,7 +292,7 @@ header{
         border-color: #803342;
         border-radius: 30px;
         margin: 0 auto;
-        width: 60%;
+        width: 80%;
         margin-bottom: 20px;
         margin-top: 20px;
         padding: 10px;
@@ -298,7 +304,7 @@ header{
         border-color: #803342;
         border-radius: 30px;
         margin: 0 auto;
-        width: 60%;
+        width: 80%;
         padding: 10px;
     }
 
@@ -311,11 +317,11 @@ header{
         padding: 10px;
         display: block;
         margin: 0 auto;
-        width: 70%;
+        width: 90%;
     }
 
     .info2 {
-        padding-left: 8px;
+        padding-left: 20px;
         margin: 5px;
     }
 
@@ -326,8 +332,21 @@ header{
         width: 70%;
     }
 
+    .button {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
     .right {
-        width: 70%;
+        width: 100%;
+    }
+
+    .title {
+        text-align: center;
+        margin: 80px;
+        font-size: 20px;
     }
 
     /*-------------------------------Home Page--------------------------------*/

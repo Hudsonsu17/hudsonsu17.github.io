@@ -262,9 +262,8 @@
 
 /*--------------------------------Thank You HTML-----------------------------------*/
 .title {
-    text-align: center;
-    margin: 169px;
     font-size: 40px;
+    margin: 169px;
 }
 
 /*------------------------------Storm Form Page----------------------------------*/
@@ -273,10 +272,20 @@ form {
 }
 
 textarea {
+    height: 160px;
     width: 100%;
-    height: 10rem;
-    max-width: 50rem;
-    border-radius: 8px;
+}
+
+.personal {
+    width: 60%;
+}
+
+.storminfo {
+    width: 60%;
+}
+
+.right {
+    width: 80%;
 }
 
 .info {
@@ -302,6 +311,10 @@ legend {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+}
+
+.hero img {
+    width: 70%;
 }
 
 .homepage p {
