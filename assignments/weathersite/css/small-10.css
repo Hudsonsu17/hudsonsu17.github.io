@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan');
     /*----------------------------------------Heading-------------------------------------------*/
 header{
         display: flex;
