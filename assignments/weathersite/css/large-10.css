@@ -84,21 +84,19 @@
 
     .sodaarticle h3 {
         font-size: 30px;
-        text-align: right;
+        text-align: center;
+        margin-top: 25px;
     }
 
     .sodaarticle h5 {
-        text-align: right;
+        text-align: center;
+        margin-top: 8px;
     }
 
     .sodaarticle p {
-        text-align: right;
+        text-align: center;
         padding-right: 0;
     }
-
-    .sodaarticle small {
-        text-align: right; 
-    } 
 
     .bball {
         color: rgba(255, 0, 0, 0.808);
