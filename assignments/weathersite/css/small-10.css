@@ -2,24 +2,25 @@
     margin: 0;
     padding: 0;
 }
-
-@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan');
+@import url('https://fonts.googleapis.com/css?family=Arimo|Indie+Flower|Lobster');
+/*font-family: 'Lobster', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Arimo', sans-serif;*/
     /*----------------------------------------Heading-------------------------------------------*/
-header{
+    header{
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
         background-color: #006666;
         text-align: center;
-        font-family: 'Baloo Chettan', cursive;
         padding: 10px;
     }
 
     .motto{
         color:white;
-        font-size: 15px;
+        font-size: 20px;
         font-style: italic;
-        font-family: cursive;
+        font-family: 'Indie Flower', cursive;
     }
 
     header h1{
@@ -27,12 +28,13 @@ header{
         font-size: 35px;
         margin: 0 auto;
         padding: 5px;
+        font-family: 'Lobster', cursive;
     }
 
 /*-----------------------------------------Navigation Menu----------------------------------------*/
     nav {
-        background-color: olivedrab;;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: olivedrab;
+        font-family: 'Arimo', sans-serif;
     }
 
     .active {
@@ -83,6 +85,7 @@ header{
         padding: 5px;
         margin-bottom: 10px;
         margin-top: 10px;
+        font-family: 'Lobster', cursive;
     }
 
     .mainsection {
@@ -108,6 +111,15 @@ header{
         margin-bottom: 20px;
     }
 
+    .sodaarticle h3 {
+        font-family: 'Lobster', cursive;
+    }
+
+    .sodaarticle h5 {
+        font-family: 'Arimo', sans-serif;
+    }
+
+
     .newsphoto {
         display: block;
         margin-left: auto;
@@ -117,10 +129,12 @@ header{
 
     .newsarticle h3 {
         margin: 0 auto;
+        font-family: 'Arimo', sans-serif;
     }
 
     .newsarticle h5 {
         margin: 0 auto;
+        font-family: 'Arimo', sans-serif;
     }
 
     /*------------------------------Current Event-------------------------------*/
@@ -129,6 +143,10 @@ header{
         border-width: 2px;
         background-color: lightgrey;
         margin: 10px;
+    }
+
+    .currentevents h2 {
+        font-family: 'Lobster', cursive;
     }
 
     .events {
@@ -143,6 +161,8 @@ header{
 
     .events h4 {
         padding: 10px;
+        font-family: 'Indie Flower', cursive;
+        font-size: 18px;
     }
     /*-------------------------------Weather Report-----------------------------*/
 
@@ -168,17 +188,21 @@ header{
         color: white;
         margin: 0 auto;
         padding: 5px;
+        font-family: 'Lobster', cursive;
     }
 
     .tempdetails {
         padding: 15px;
         color: white;
-        font-size: 14px;
         border-style: inset;
         border-color: #491d26;
         border-width: 2px;
+        font-family: 'Arimo', sans-serif;
     }
 
+    .label {
+        font-size: 14px;
+    }
     /*-----------------------------------Contact Section-------------------------------------*/
 
     .contactinfo {
@@ -186,6 +210,16 @@ header{
         background-color: #e6fff7;
         padding: 15px;
         margin: 0 auto;
+    }
+
+    .contactinfo h4 {
+        font-family: 'Indie Flower', cursive;
+        font-size: 20px;
+    }
+
+    .contactinfo p {
+        font-family: 'Arimo', sans-serif;
+        font-size: 14px;
     }
 
     .map {
@@ -237,7 +271,6 @@ header{
 /*---------------------------------Gallery Page------------------------------*/
     body h2 {
         text-align: center;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
     .container {
@@ -315,6 +348,7 @@ header{
     main form h1 {
         margin: 0 auto;
         padding: 5px;
+        font-family: 'Lobster', cursive;
     }
 
     .info {
@@ -364,7 +398,9 @@ header{
 
     .hero h1 {
         text-align: center;
-        margin-bottom: 5px;
+        margin-bottom: 20px;
+        margin-top: 50px;
+        font-family: 'Lobster', cursive;
     }
 
     .homepage {
@@ -385,6 +421,7 @@ header{
         margin: 0 auto;
         padding: 10px;
         text-align: center;
+        font-family: 'Indie Flower', cursive;
     }
 
     .notes {
@@ -393,6 +430,8 @@ header{
         width: 220px;
         word-wrap: break-word;
         text-align: center;
+        font-family: 'Arimo', sans-serif;
+        font-size: 14px;
     }
 
     .notes1 {
@@ -401,6 +440,8 @@ header{
         width: 220px;
         word-wrap: break-word;
         text-align: center;
+        font-family: 'Arimo', sans-serif;
+        font-size: 14px;
     }
 
     .homepage p {
@@ -420,6 +461,7 @@ header{
         width: 220px;
         word-wrap: break-word;
         text-align: center;
+        font-family: 'Arimo', sans-serif;
     }
 
     .homepage p img {

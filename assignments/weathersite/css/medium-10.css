@@ -13,6 +13,10 @@
         justify-content: center; 
     }
 
+    .menu li a {
+        font-size: 17px;
+    }
+
     nav li {
         padding: 0;
         position: relative;
@@ -32,55 +36,63 @@
         visibility: hidden;
     }
 /*-------------------Storm Form Section--------------------*/
-form h1 {
-    text-align: center;
-}
+    form h1 {
+        text-align: center;
+    }
 
-.info {
-    display: grid;
-    grid-template-columns: 400px;
-    margin: 0 auto;
-    width: 100%;
-}
+    .info {
+        display: grid;
+        grid-template-columns: 400px;
+        margin: 0 auto;
+        width: 100%;
+    }
 
-.storminfo {
-    margin-bottom: 15px;
-}
+    .storminfo {
+        margin-bottom: 15px;
+    }
 
-.button {
-    display: block;
-    margin: 0 auto;
-    width: 30%;
-}
-/*-------------------------Weather forecast table------------------*/
-.newsarticle h2 {
-    text-align: left;
-}
+    .button {
+        display: block;
+        margin: 0 auto;
+        width: 30%;
+    }
+    /*---------------------Article Section-----------------------*/
+    .newsarticle h2 {
+        text-align: left;
+    }
+    /*------------------------Storm Form-----------------------*/
+    textarea {
+        width: 100%;
+    }
 
-textarea {
-    width: 100%;
-}
+    .personal {
+        width: 60%;
+    }
 
-.personal {
-    width: 60%;
-}
+    .info2 {
+        padding-left: 8px;
+    }
 
-.info2 {
-    padding-left: 8px;
-}
+    .storminfo {
+        width: 60%;
+    }
 
-.storminfo {
-    width: 60%;
-}
+    .right {
+        width: 80%;
+    }
+    /*------------------------Weather Forecast-----------------*/
+    .weatherreport {
+        position: absolute;
+        left: 50px;
+        bottom: 140px;
+        width: 22%;
+    }
 
-.right {
-    width: 80%;
-}
+    .motto {
+        font-size: 20px;
+    }
 
-.weatherreport {
-    position: absolute;
-    left: 50px;
-    bottom: 140px;
-    width: 22%;
-}
+    .contactinfo {
+        width: 930px;
+    }
 }

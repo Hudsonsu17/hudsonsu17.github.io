@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The Wonders of Southern Idaho | The source for fun and adventure in Southern Idaho</title>
     <meta name="description" content="local weather, tourist spots, events, and basic information for those who are visiting or living in Southern Idaho, especially for Preston, Fish Haven, and Soda Springs">
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Indie+Flower|Lobster" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small-10.css">
     <link rel="stylesheet" href="css/medium-10.css">
@@ -110,7 +110,12 @@
         </section>
 
         <article class="sodaarticle">
-            <img src="images/sodawatersmall.jpg" alt="soda springs geyser" class="sodaphoto">
+            <picture>
+                <source media="(max-width: 460px)" srcset="images/sodawaterlittle.jpg">
+                <source media="(max-width: 800px)" srcset="images/sodawatermed.jpg">
+                <source media="(min-width: 801px)" srcset="images/sodawatersmall.jpg">
+                <img class="heroimage" src="images/sodawatersmall.jpg" alt="ocean photo">
+            </picture>
             <h3>Geyser Park in Soda Springs, Idaho</h3>
             <h5>City of Soda Springs</h5>
             <p class="article">Soda Springs has the only captive geyser in the world. It was discovered in an attempt to find a hot water source
