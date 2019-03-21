@@ -16,6 +16,11 @@ font-family: 'Arimo', sans-serif;*/
         padding: 10px;
     }
 
+    .headings {
+        vertical-align: middle;
+        margin: 10px;
+    }
+
     .motto{
         color:white;
         font-size: 20px;
@@ -74,14 +79,9 @@ font-family: 'Arimo', sans-serif;*/
     }
 
 /*---------------------------------------------Main Section-------------------------------------*/
-    main {
-        margin: 0 auto;
-        padding: 5px;
-    }
-
     main h2{
         text-align: center;
-        font-size: 25px;
+        font-size: 32px;
         padding: 5px;
         margin-bottom: 10px;
         margin-top: 10px;
@@ -109,14 +109,17 @@ font-family: 'Arimo', sans-serif;*/
         margin: 10px;
         margin-top: 20px;
         margin-bottom: 20px;
+        margin: 0 auto;
     }
 
     .sodaarticle h3 {
         font-family: 'Lobster', cursive;
+        margin: 5px;
     }
 
     .sodaarticle h5 {
         font-family: 'Arimo', sans-serif;
+        margin: 5px;
     }
 
 
@@ -130,11 +133,13 @@ font-family: 'Arimo', sans-serif;*/
     .newsarticle h3 {
         margin: 0 auto;
         font-family: 'Arimo', sans-serif;
+        margin: 5px;
     }
 
     .newsarticle h5 {
         margin: 0 auto;
         font-family: 'Arimo', sans-serif;
+        margin: 5px;
     }
 
     /*------------------------------Current Event-------------------------------*/
@@ -178,6 +183,7 @@ font-family: 'Arimo', sans-serif;*/
         opacity: .90;
         padding: 5px;
         margin-top: 15px;
+        margin-bottom: 15px;
         font-size: 14px;
     }
 
@@ -220,6 +226,7 @@ font-family: 'Arimo', sans-serif;*/
     .contactinfo p {
         font-family: 'Arimo', sans-serif;
         font-size: 14px;
+        margin-bottom: 10px;
     }
 
     .map {
@@ -232,6 +239,7 @@ font-family: 'Arimo', sans-serif;*/
         max-width: 90%;
         display: block;
         margin: 0 auto;
+        margin-bottom: 10px;
     }
 
     /*----------------------------------Footer-------------------------*/
@@ -349,6 +357,7 @@ font-family: 'Arimo', sans-serif;*/
         margin: 0 auto;
         padding: 5px;
         font-family: 'Lobster', cursive;
+        text-align: center;
     }
 
     .info {

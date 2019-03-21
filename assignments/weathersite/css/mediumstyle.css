@@ -17,6 +17,10 @@
         font-size: 17px;
     }
 
+    .menu li:first-child {
+        display: none;
+    }
+
     nav li {
         padding: 0;
         position: relative;
@@ -32,9 +36,6 @@
         display: none;
     }
 
-    .dropbtn {
-        visibility: hidden;
-    }
 /*-------------------Storm Form Section--------------------*/
     form h1 {
         text-align: center;
@@ -93,6 +94,6 @@
     }
 
     .contactinfo {
-        width: 930px;
+        width: 95.5%;
     }
 }
