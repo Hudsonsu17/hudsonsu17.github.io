@@ -34,8 +34,9 @@
 
 /*--------------------------------------Main-------------------------------------------*/
     main {
-        width: 950px;
+        width: 962.5px;
         margin: 0 auto;
+        padding-right: 4px;
     }
 
     main h2{
@@ -51,13 +52,11 @@
     .newsarticle {
         margin: 0 auto;
         margin-bottom: 10px;
-        width: 915px;
     }
 
     .sodaarticle {
         margin: 0 auto;
-        /* margin-bottom: 10px; */
-        width: 915px;
+        margin-bottom: 10px;
     }
 
     .sodaarticle h3 {
@@ -142,12 +141,9 @@
 
     /*-------------------------------Contact Info------------------------*/
     .contactinfo {
-        border: 1px solid lightgray;
-        background-color: #e6fff7;
-        padding: 5px;
         display: flex;
         align-content: space-around;
-        width: 938px;
+        width: 97%;
     }
 
     .contactinfo p {
@@ -158,6 +154,7 @@
     .contactinfo h4 {
         padding: 5px;
         display: flex;
+        text-align: center;
     }
 
     .map {
@@ -180,14 +177,14 @@
         padding-bottom: 8px;
     }
 
-    .footerbar {
+    footer p {
         margin: 0 auto;
         padding-top: 8px;
-        font-size: 16px;
+        font-size: 18px;
     }
 
-    .currentdate {
-        font-size: 16px;
+    footer div {
+        font-size: 18px;
         margin-top: 5px;
     }
     /*----------------------------------Weather Forecast Table-------------------*/

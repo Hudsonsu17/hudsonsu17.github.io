@@ -1,9 +1,9 @@
 @media only screen and (min-width: 460px){
-/*-----------------------------Gallery Page--------------------------------*/
+    /*-----------------------------Gallery Page--------------------------------*/
     .container {
         grid-template-columns: 1fr 1fr;
     }
-/*------------------------Navigation Menu----------------------------*/    
+    /*------------------------Navigation Menu----------------------------*/    
     nav {
         max-width: 100%; 
     }
@@ -21,13 +21,6 @@
         display: none;
     }
 
-    nav li {
-        padding: 0;
-        position: relative;
-        align-content: center; 
-        display: inline-block; 
-    }
-
     nav .dropdown {
         display: inline-block;
     }
@@ -36,32 +29,17 @@
         display: none;
     }
 
-/*-------------------Storm Form Section--------------------*/
-    form h1 {
-        text-align: center;
-    }
-
-    .info {
-        display: grid;
-        grid-template-columns: 400px;
-        margin: 0 auto;
-        width: 100%;
-    }
-
-    .storminfo {
-        margin-bottom: 15px;
-    }
-
-    .button {
-        display: block;
-        margin: 0 auto;
-        width: 30%;
-    }
     /*---------------------Article Section-----------------------*/
     .newsarticle h2 {
         text-align: left;
     }
+
     /*------------------------Storm Form-----------------------*/
+    .button {
+        width: 30%;
+        margin-top: 15px;
+    }
+
     textarea {
         width: 100%;
     }
@@ -93,7 +71,27 @@
         font-size: 20px;
     }
 
-    .contactinfo {
-        width: 95.5%;
+    /*---------------------Contact Section------------------*/
+    .contactinfo h4 {
+        text-align: right;
+    }
+
+    .contactinfo p {
+        float: right;
+        margin: 10px;
+    }
+
+    footer {
+        padding: 8px;
+    }
+
+    footer p {
+        padding: 3px;
+        font-size: 16px;
+    }
+
+    footer div {
+        padding: 3px;
+        font-size: 16px;
     }
 }
