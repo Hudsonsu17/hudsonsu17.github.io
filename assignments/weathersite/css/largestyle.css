@@ -166,20 +166,13 @@
     /*-----------------------------------Footer------------------------------------*/
 
     footer{
-        background-color: olivedrab;
-        text-align: center;
         width: 950px;
-        height: auto;
         display: block;
-        margin: 0 auto;
-        color: #f1f1f1;
         clear: right;
         padding-bottom: 8px;
     }
 
     footer p {
-        margin: 0 auto;
-        padding-top: 8px;
         font-size: 16px;
     }
 
