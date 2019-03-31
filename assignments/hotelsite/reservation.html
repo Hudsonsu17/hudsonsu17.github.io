@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Temple Inn & Suites | Supporting those who serve others!</title>
+    <meta name="description" content="local events around temple sites, temple hours and sessions information, and hotel accommodations for families and temple workers">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Germania+One|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/smallstyle.css">
+    <link rel="stylesheet" href="css/mediumstyle.css">
+    <link rel="stylesheet" href="css/largestyle.css">
+    <link rel="shortcut icon" type="image/png" href="images/icon.png">
+</head>
+
+<body>
+    <header>
+        <img src="images/icon.png" class="headerimage" alt="header logo">
+        <section class="headings">
+            <h1>The Temple Inn & Suites</h1>
+            <div class="motto">Where we support those who serve others!</div>
+        </section>
+        <nav>
+            <ul class="menu" id="navmenu">
+                <li class="dropdown">
+                    <a href="#" class="dropbtn" onclick="toggleMenu()">&#9776; Menu</a>
+                </li>
+                <li class="dropdown">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="dropdown">
+                    <a href="temple.html">Temples</a>
+                </li>
+                <li class="dropdown">
+                    <a href="reservation.html" class="active">Hotel Reservations</a>
+                </li>
+                <li class="dropdown">
+                    <a href="services.html">Hotel Services</a>
+                    <div class="dropdown-content">
+                        <a href="missionary.html">Full-Time Missionaries</a>
+                        <a href="reception.html">Wedding Receptions</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="stormmain">
+        <form action="thankspage.html">
+            <h1>Storm Report Form</h1>
+            <hr>
+
+            <fieldset class="personal">
+                <legend>Personal Information</legend>
+                <div class="info">
+                    <label class="data">*First Name:</label>
+                    <input type="text" name="first" required minlength="5" pattern=".{5,}" tabindex="1" class="right">
+                </div>
+                <div class="info">
+                    <label class="data">*Last Name:</label>
+                    <input type="text" name="last" required minlength="5" pattern=".{5,}" tabindex="2" class="right">
+                </div>
+                <div class="info">
+                    <label class="data">*Email Address:</label>
+                    <input type="email" name="email" placeholder="johnsmith@gmail.com" required minlength="10" tabindex="3" class="right">
+                </div>
+                <div class="info">
+                    <label class="data">*Phone Number:</label>
+                    <input type="tel" name="telephone" required minlength="9" tabindex="4" class="right">
+                </div>
+                <div class="info">
+                    <label class="data">*Zip Code:</label>
+                    <input type="number" name="areacode" required tabindex="5" class="right">
+                </div>
+                <div class="info">*Required to submit</div>
+            </fieldset>
+
+            <fieldset class="storminfo">
+                <legend>Storm Information</legend>
+                <div class="info">
+                    <label class="data">Storm Date:</label>
+                    <input type="date" name="date" tabindex="6" class="right">
+                </div>
+                <div class="info">
+                    <label class="data">Type of Storm:</label>
+                    <input type="text" name="storm" list="l1" tabindex="7" class="right">
+                    <datalist id="l1">
+                        <option>Flashflood</option>
+                        <option>Hail</option>
+                        <option>Hurricane</option>
+                        <option>Thunderstorm</option>
+                        <option>Tornado</option>
+                    </datalist>
+                </div>
+                <div class="info">
+                    <label class="data">Storm Severity Level (1=tamed, 10=severe):</label>
+                    <input type="range" name="level" id="rating" value="5" min="0" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"
+                        tabindex="8">
+                    <span id="ratingvalue">5</span>
+                </div>
+                <div class="info">
+                    <label class="data">*Storm Region:</label>
+                    <select name="region" required tabindex="9">
+                        <option value="Select Option" disabled selected>Select Option...</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                    </select>
+                </div>
+                <div class="info2">
+                    <label class="data">
+                        <u>User In-Danger Level:</u>
+                    </label>
+                    <input type="radio" name="danger1" id="r1" tabindex="10">
+                    <label for="r1">Yes</label>
+                    <input type="radio" name="danger2" id="r2" tabindex="11">
+                    <label for="r2">Maybe</label>
+                    <input type="radio" name="danger3" id="r3" tabindex="12">
+                    <label for="r3">No</label>
+                </div>
+                <div class="info">
+                    <label class="data">Please provide any additional information or comments:</label>
+                    <textarea name="comments" maxlength="300" rows="5" tabindex="13"></textarea>
+                </div>
+                <div class="info">*Required to submit</div>
+            </fieldset>
+            <input class="button" type="submit" name="submit" value="Submit Report">
+        </form>
+    </main>
+
+    <section>
+        <article class="contactinfo">
+            <h4>The Wonders of Southern Idaho Website</h4>
+            <p>30 N 1st E
+                <br> Preston, ID 83263</p>
+            <p>Phone: 208-555-5555
+                <br> Email: wondersofsi@gmail.com</p>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed/v1/view?zoom=12&center=42.0963%2C-111.8766&key=AIzaSyBraCrN9eDxKmBetKaWsMejLTV6sKG3WDs"
+                    style="border:0" allowfullscreen></iframe>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy;2019 The Wonders of Southern Idaho |
+            <a href="https://openweathermap.org">OpenWeatherMap</a> | Suzannah Hudson</p>
+        <div id="currentdate"></div>
+    </footer>
+
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/rating.js"></script>
+</body>
+
+</html>
