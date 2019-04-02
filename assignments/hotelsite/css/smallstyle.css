@@ -13,6 +13,19 @@ font-family: 'Indie Flower', cursive;*/
         font-size: 25px;
         border-radius: 20px;
         text-decoration: none;
+        position: relative;
+        z-index: 1;
+        left: 770px;
+        top: 130px;
+        padding: 5px;
+    }
+
+    .templetable {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        grid-column-gap: 0;
+        margin: 0 auto;
     }
     /*----------------------------------------Heading-------------------------------------------*/
     body {
@@ -28,6 +41,7 @@ font-family: 'Indie Flower', cursive;*/
         padding: 5px;
         position: fixed;
         top: 0;
+        z-index: 99;
         width: 100%;
     }
 
@@ -356,15 +370,7 @@ font-family: 'Indie Flower', cursive;*/
         margin: 0 auto;
     }
 
-    figcaption {
-        width: 70%;
-        text-align: center;
-        display: block;
-        margin: 0 auto;
-        margin-bottom: 10px;
-    }
-
-    .individual {
+    .individual-front {
         margin-bottom: 10px;
     }
 

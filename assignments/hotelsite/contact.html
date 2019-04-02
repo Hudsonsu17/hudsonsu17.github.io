@@ -50,22 +50,41 @@
     </header>
 
     <main>
-        <h2>Welcome</h2>
-        <section class="mainsection">
-            <picture>
-                <source media="(max-width: 460px)" srcset="images/fishherosmall.jpg">
-                <source media="(max-width: 800px)" srcset="images/fishheromed.jpg">
-                <source media="(min-width: 801px)" srcset="images/heroimage.jpg">
-                <img class="heroimage" src="images/heroimage.jpg" alt="temple sunset with plains">
-            </picture>
-        </section>
-
+            <main class="contactmain">
+                    <form action="thankspage.html">
+                        <h1>Have Questions or Want to Leave Us Feedback?</h1>
+                        <hr>
+            
+                        <fieldset class="personal">
+                            <legend>Contact Us</legend>
+                            <div class="info">
+                                <label class="data">*First Name:</label>
+                                <input type="text" name="first" required minlength="5" pattern=".{5,}" tabindex="1" class="right">
+                            </div>
+                            <div class="info">
+                                <label class="data">*Last Name:</label>
+                                <input type="text" name="last" required minlength="5" pattern=".{5,}" tabindex="2" class="right">
+                            </div>
+                            <div class="info">
+                                <label class="data">*Email Address:</label>
+                                <input type="email" name="email" placeholder="johnsmith@gmail.com" required minlength="10" tabindex="3" class="right">
+                            </div>
+                            <div class="info">
+                                    <label class="data">Please provide below any questions, comments, or feedback that you have for us:</label>
+                                    <textarea name="comments" maxlength="300" rows="5" tabindex="13"></textarea>
+                            </div>
+                            <div class="info">*Required to submit</div>
+                        </fieldset>
+                        <input class="button" type="submit" name="submit" value="Send Your Form">
+                    </form>
+                </main>
+            
         <article class="contactinfo">
-            <h4>The Wonders of Southern Idaho Website</h4>
-            <p>30 N 1st E
-                <br> Preston, ID 83263</p>
+            <h4>The Temple Inn & Suite</h4>
+            <p>4800 Montgomery Ln #300
+                <br> Bethesda, MD 20814</p>
             <p>Phone: 208-555-5555
-                <br> Email: wondersofsi@gmail.com</p>
+                <br> Email: templehotels@gmail.com</p>
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed/v1/view?zoom=15&center=38.9847%2C-77.0947&key=AIzaSyBraCrN9eDxKmBetKaWsMejLTV6sKG3WDs"
                     style="border:0" allowfullscreen></iframe>

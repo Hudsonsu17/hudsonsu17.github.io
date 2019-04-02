@@ -51,7 +51,7 @@
 
     <main class="stormmain">
         <form action="thankspage.html">
-            <h1>Storm Report Form</h1>
+            <h1>Come Stay With Us!</h1>
             <hr>
 
             <fieldset class="personal">
@@ -78,67 +78,17 @@
                 </div>
                 <div class="info">*Required to submit</div>
             </fieldset>
-
-            <fieldset class="storminfo">
-                <legend>Storm Information</legend>
-                <div class="info">
-                    <label class="data">Storm Date:</label>
-                    <input type="date" name="date" tabindex="6" class="right">
-                </div>
-                <div class="info">
-                    <label class="data">Type of Storm:</label>
-                    <input type="text" name="storm" list="l1" tabindex="7" class="right">
-                    <datalist id="l1">
-                        <option>Flashflood</option>
-                        <option>Hail</option>
-                        <option>Hurricane</option>
-                        <option>Thunderstorm</option>
-                        <option>Tornado</option>
-                    </datalist>
-                </div>
-                <div class="info">
-                    <label class="data">Storm Severity Level (1=tamed, 10=severe):</label>
-                    <input type="range" name="level" id="rating" value="5" min="0" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"
-                        tabindex="8">
-                    <span id="ratingvalue">5</span>
-                </div>
-                <div class="info">
-                    <label class="data">*Storm Region:</label>
-                    <select name="region" required tabindex="9">
-                        <option value="Select Option" disabled selected>Select Option...</option>
-                        <option value="Fish Haven">Fish Haven</option>
-                        <option value="Preston">Preston</option>
-                        <option value="Soda Springs">Soda Springs</option>
-                    </select>
-                </div>
-                <div class="info2">
-                    <label class="data">
-                        <u>User In-Danger Level:</u>
-                    </label>
-                    <input type="radio" name="danger1" id="r1" tabindex="10">
-                    <label for="r1">Yes</label>
-                    <input type="radio" name="danger2" id="r2" tabindex="11">
-                    <label for="r2">Maybe</label>
-                    <input type="radio" name="danger3" id="r3" tabindex="12">
-                    <label for="r3">No</label>
-                </div>
-                <div class="info">
-                    <label class="data">Please provide any additional information or comments:</label>
-                    <textarea name="comments" maxlength="300" rows="5" tabindex="13"></textarea>
-                </div>
-                <div class="info">*Required to submit</div>
-            </fieldset>
             <input class="button" type="submit" name="submit" value="Submit Report">
         </form>
     </main>
 
     <section>
         <article class="contactinfo">
-            <h4>The Wonders of Southern Idaho Website</h4>
-            <p>30 N 1st E
-                <br> Preston, ID 83263</p>
+            <h4>The Temple Inn & Suite</h4>
+            <p>4800 Montgomery Ln #300
+                <br> Bethesda, MD 20814</p>
             <p>Phone: 208-555-5555
-                <br> Email: wondersofsi@gmail.com</p>
+                <br> Email: templehotels@gmail.com</p>
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed/v1/view?zoom=12&center=42.0963%2C-111.8766&key=AIzaSyBraCrN9eDxKmBetKaWsMejLTV6sKG3WDs"
                     style="border:0" allowfullscreen></iframe>

@@ -1,5 +1,12 @@
 @media only screen and (min-width: 960px)  { 
 
+    .templeinfo {
+        float: right;
+    }
+
+    main {
+        margin-top: 80px;
+    }
 /*------------------------------------------Header-----------------------------------------*/
     .headerimage {
         margin-left: 30px;
@@ -36,11 +43,11 @@
     }
 
 /*--------------------------------------Main-------------------------------------------*/
-    main {
+    /* main {
         width: 962.5px;
         margin: 0 auto;
         padding-right: 4px;
-    }
+    } */
 
     main h2{
         font-size: 30px;
@@ -235,7 +242,7 @@
         margin: 0 auto;
     }
 
-    .individual:hover {
+    .individual-front:hover {
         box-shadow: 0 0 50px #333;
     }
 
@@ -247,7 +254,7 @@
         margin-bottom: 35px;
     }
 
-    .individual {
+    .individual-front {
         width: 90%;
         font-size: 13px;
         display: block;
