@@ -7,6 +7,10 @@
     main {
         margin-top: 80px;
     }
+
+    .templemain {
+        margin-top: 120px;
+    }
 /*------------------------------------------Header-----------------------------------------*/
     .headerimage {
         margin-left: 30px;
@@ -259,6 +263,11 @@
         font-size: 13px;
         display: block;
         margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        border-style: dashed;
+        border-width: 2px;
+        border-color: #dda15e;
     }
 
     /*--------------------------------Thank You HTML-----------------------------------*/
