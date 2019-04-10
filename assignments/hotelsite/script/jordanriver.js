@@ -9,3 +9,37 @@ jordanRequest.onload =  function () {
     document.getElementById('jordanriver').innerHTML = "CURRENT TEMPERATURE: " + weatherData.main.temp + " &deg;F";
     document.getElementById('forecast2').innerHTML = "WEATHER CONDITION: " + weatherData.weather[0].description;
 }
+
+//This is to get the closed dates for the temple
+
+let events = document.querySelector('article');
+
+let requestURL = 'https://hudsonsu17.github.io/assignments/hotelsite/json/closed.json';
+let request = new XMLHttpRequest();
+request.open('GET', requestURL);
+request.responseType = 'json';
+request.send();
+
+request.onload = function () {
+    let getData = request.response;
+    let temple = getData['temples'];
+    console.log(temple);
+
+    for (let i = 0; i < temple.length; i++) {
+        if (temple[i].name == "Jordan River") {
+            let meridianList = temple[i].closed;
+            let dateTime = 0; 
+
+            for (let j = 0; j < meridianList.length; j++) {
+                let date = meridianList[dateTime];
+                dateTime++;
+
+            let eventSection = document.createElement('div');
+            let h4List = document.createElement('h4');
+            h4List.textContent = date;
+            eventSection.appendChild(h4List);
+            events.appendChild(eventSection);
+            }
+        }
+    }
+}

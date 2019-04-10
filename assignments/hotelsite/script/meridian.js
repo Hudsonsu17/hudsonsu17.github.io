@@ -7,17 +7,16 @@ meridianRequest.send();
 
 meridianRequest.onload =  function () {
     let weatherData = JSON.parse(meridianRequest.responseText);
-    console.log(weatherData);
 
     document.getElementById('meridian').innerHTML = "CURRENT TEMPERATURE: " + weatherData.main.temp + " &deg;F";
     document.getElementById('forecast1').innerHTML = "WEATHER CONDITION: " + weatherData.weather[0].description;
 }
 
-//This is to get session and closing schedules
+//This is to get the closed dates for the temple
 
-let events = document.querySelector('#events');
+let events = document.querySelector('#closed');
 
-let requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+let requestURL = 'https://hudsonsu17.github.io/assignments/hotelsite/json/closed.json';
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
@@ -25,24 +24,114 @@ request.send();
 
 request.onload = function () {
     let getData = request.response;
-    let towns = getData['towns'];
+    let temple = getData['temples'];
+    console.log(temple);
 
-    for (let i = 0; i < towns.length; i++) {
-        if (towns[i].name == "Fish Haven") {
-            let prestonEvents = towns[i].events;
-            let eventName = 0; 
+    for (let i = 0; i < temple.length; i++) {
+        if (temple[i].name == "Meridian") {
+            let meridianList = temple[i].closed;
+            let dateTime = 0; 
 
-            for (let j = 0; j < prestonEvents.length; j++) {
-                let event = prestonEvents[eventName];
-                eventName++;
+            for (let j = 0; j < meridianList.length; j++) {
+                let date = meridianList[dateTime];
+                dateTime++;
 
-            let eventSection = document.createElement('article');
+            let eventSection = document.createElement('div');
             let h4List = document.createElement('h4');
-            h4List.textContent = event;
+            h4List.textContent = date;
             eventSection.appendChild(h4List);
             events.appendChild(eventSection);
-  
             }
         }
     }
 }
+
+//This is to get the session dates for the temple
+
+let output = document.querySelector('#sessions');
+
+let getURL = 'https://hudsonsu17.github.io/assignments/hotelsite/json/sessions.json';
+let grab = new XMLHttpRequest();
+grab.open('GET', getURL);
+grab.responseType = 'json';
+grab.send();
+
+grab.onload = function () {
+    let grabData = grab.response;
+    let temples = grabData['times'];
+    console.log(temples);
+
+    for (let i = 0; i < temples.length; i++) {
+        if (temples[i].name == "Meridian") {
+            let templeList = temples[i].session;
+            let time = 0; 
+
+            for (let j = 0; j < templeList.length; j++) {
+                let date = templeList[time];
+                time++;
+
+            let sessionTime = document.createElement('div');
+            let times = document.createElement('h4');
+            times.textContent = date;
+            sessionTime.appendChild(times);
+            output.appendChild(sessionTime);
+            }
+        }
+    }
+}
+
+
+
+//This is for the session times for the temple
+// const getURL = 'https://hudsonsu17.github.io/assignments/hotelsite/json/sessions.json';
+// let grab = new XMLHttpRequest();
+// grab.open('GET', getURL);
+// grab.responseType = 'json';
+// grab.send();
+
+// grab.onload = function () {
+//     let sessiondata = grab.response;
+//     let sessions = sessiondata['temples'];
+//     let nameArray = ["Meridian", "Jordan River", "Seattle", "Snowflake"];
+//     console.log(sessions);
+
+//     let output = document.querySelector('section');
+
+//     for (i = 0; i < towns.length; i++)
+//         for (t = 0; t < nameArray.length; t++) {
+//             if (towns[i].name == nameArray[t]) {
+//                 let para = document.createElement('p');
+//                 let homeH3 = document.createElement('h3');
+//                 let motto = document.createElement('div');
+//                 motto.setAttribute("class", "jsonmotto");
+//                 let year = document.createElement('div');
+//                 let population = document.createElement('div');
+//                 let rainfall = document.createElement('div');
+//                 if (towns[i].name == "Soda Springs") {
+//                     rainfall.setAttribute("class", "notes");
+//                     population.setAttribute("class", "notes");
+//                     year.setAttribute("class", "notes");
+//                 }
+//                 else {
+//                     rainfall.setAttribute("class", "notes1");
+//                     population.setAttribute("class", "notes1");
+//                     year.setAttribute("class", "notes1");
+//                 }
+//                 let x = document.createElement("img");
+//                 x.setAttribute("src", "images/" + towns[i].name + ".jpg");
+//                 x.setAttribute("alt", towns[i].name);
+//                 homeH3.textContent = towns[i].name;
+//                 motto.textContent = towns[i].motto;
+//                 year.textContent = 'Year Founded: ' + towns[i].yearFounded;
+//                 population.textContent = 'Population: ' + towns[i].currentPopulation;
+//                 rainfall.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
+//                 para.appendChild(homeH3);
+//                 para.appendChild(motto);
+//                 para.appendChild(year);
+//                 para.appendChild(population);
+//                 para.appendChild(rainfall);
+//                 para.appendChild(x);
+//                 output.appendChild(para);
+//             }
+//         }
+// }

@@ -31,6 +31,12 @@
                 </li>
                 <li class="dropdown">
                     <a href="temple.html">Temples</a>
+                    <div class="dropdown-content">
+                        <a href="meridian.html">Meridian Temple</a>
+                        <a href="jordanriver.html">Jordan River Temple</a>
+                        <a href="seattle.html">Seattle Temple</a>
+                        <a href="snowflake.html">Snowflake Temple</a>
+                    </div>
                 </li>
                 <li class="dropdown">
                     <a href="reservation.html">Hotel Reservations</a>
@@ -50,35 +56,35 @@
     </header>
 
     <main>
-            <main class="contactmain">
-                    <form action="thankspage.html">
-                        <h1>Have Questions or Want to Leave Us Feedback?</h1>
-                        <hr>
-            
-                        <fieldset class="personal">
-                            <legend>Contact Us</legend>
-                            <div class="info">
-                                <label class="data">*First Name:</label>
-                                <input type="text" name="first" required minlength="5" pattern=".{5,}" tabindex="1" class="right">
-                            </div>
-                            <div class="info">
-                                <label class="data">*Last Name:</label>
-                                <input type="text" name="last" required minlength="5" pattern=".{5,}" tabindex="2" class="right">
-                            </div>
-                            <div class="info">
-                                <label class="data">*Email Address:</label>
-                                <input type="email" name="email" placeholder="johnsmith@gmail.com" required minlength="10" tabindex="3" class="right">
-                            </div>
-                            <div class="info">
-                                    <label class="data">Please provide below any questions, comments, or feedback that you have for us:</label>
-                                    <textarea name="comments" maxlength="300" rows="5" tabindex="13"></textarea>
-                            </div>
-                            <div class="info">*Required to submit</div>
-                        </fieldset>
-                        <input class="button" type="submit" name="submit" value="Send Your Form">
-                    </form>
-                </main>
-            
+        <main class="contactmain">
+            <form action="thankspage.html">
+                <h1>Have Questions or Want to Leave Us Feedback?</h1>
+                <hr>
+
+                <fieldset class="personal">
+                    <legend>Contact Us</legend>
+                    <div class="info">
+                        <label class="data">*First Name:</label>
+                        <input type="text" name="first" required minlength="5" pattern=".{5,}" tabindex="1" class="right">
+                    </div>
+                    <div class="info">
+                        <label class="data">*Last Name:</label>
+                        <input type="text" name="last" required minlength="5" pattern=".{5,}" tabindex="2" class="right">
+                    </div>
+                    <div class="info">
+                        <label class="data">*Email Address:</label>
+                        <input type="email" name="email" placeholder="johnsmith@gmail.com" required minlength="10" tabindex="3" class="right">
+                    </div>
+                    <div class="info">
+                        <label class="data">Please provide below any questions, comments, or feedback that you have for us:</label>
+                        <textarea name="comments" maxlength="300" rows="5" tabindex="13"></textarea>
+                    </div>
+                    <div class="info">*Required to submit</div>
+                </fieldset>
+                <input class="button" type="submit" name="submit" value="Send Your Form">
+            </form>
+        </main>
+
         <article class="contactinfo">
             <h4>The Temple Inn & Suite</h4>
             <p>4800 Montgomery Ln #300
@@ -93,7 +99,7 @@
     </main>
 
     <footer>
-        <p>&copy;2019 The Temple Inn & Suites | Reference Page | Suzannah Hudson</p>
+        <p>&copy;2019 The Temple Inn & Suites | <a href="reference.html" class="reference">Reference Page</a> | Suzannah Hudson</p>
         <div id="currentdate"></div>
     </footer>
 

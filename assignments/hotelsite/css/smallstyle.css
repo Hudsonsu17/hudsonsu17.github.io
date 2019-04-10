@@ -20,13 +20,13 @@ font-family: 'Indie Flower', cursive;*/
         padding: 5px;
     }
 
-    .templetable {
+    /* .templetable {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 30px;
         grid-column-gap: 0;
         margin: 0 auto;
-    }
+    } */
 
     figcaption {
         font-family: 'Indie Flower', cursive;

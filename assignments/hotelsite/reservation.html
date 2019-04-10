@@ -31,6 +31,12 @@
                 </li>
                 <li class="dropdown">
                     <a href="temple.html">Temples</a>
+                    <div class="dropdown-content">
+                        <a href="meridian.html">Meridian Temple</a>
+                        <a href="jordanriver.html">Jordan River Temple</a>
+                        <a href="seattle.html">Seattle Temple</a>
+                        <a href="snowflake.html">Snowflake Temple</a>
+                    </div>
                 </li>
                 <li class="dropdown">
                     <a href="reservation.html" class="active">Hotel Reservations</a>
@@ -76,7 +82,31 @@
                     <label class="data">*Zip Code:</label>
                     <input type="number" name="areacode" required tabindex="5" class="right">
                 </div>
+                <div class="info">
+                    <label class="data">Credit Card Number:</label>
+                    <input type="text" name="party" required minlength="5" pattern=".{5,}" tabindex="6" class="right">
+                </div>
                 <div class="info">*Required to submit</div>
+            </fieldset>
+
+            <fieldset class="personal">
+                <legend>Room Information</legend>
+                <div class="info">
+                    <label class="data">How Many People Are In Your Party?</label>
+                    <input type="text" name="party" required minlength="5" pattern=".{5,}" tabindex="6" class="right">
+                </div>
+                <div class="info">
+                    <label class="data">How Many Rooms?</label>
+                    <input type="number" name="rooms" required tabindex="7" class="right">
+                </div>
+                <div class="info">
+                    <label class="data">How Many Beds?</label>
+                    <input type="number" name="beds" required tabindex="8" class="right">
+                </div>
+                <div class="info">
+                    <label class="data">Smoking or Non-Smoking? Pets?</label>
+                    <input type="text" name="party" required minlength="5" pattern=".{5,}" tabindex="6" class="right">
+                </div>
             </fieldset>
             <input class="button" type="submit" name="submit" value="Submit Report">
         </form>
@@ -97,7 +127,7 @@
     </section>
 
     <footer>
-        <p>&copy;2019 The Temple Inn & Suites | Reference Page | Suzannah Hudson</p>
+        <p>&copy;2019 The Temple Inn & Suites | <a href="reference.html" class="reference">Reference Page</a> | Suzannah Hudson</p>
         <div id="currentdate"></div>
     </footer>
 
