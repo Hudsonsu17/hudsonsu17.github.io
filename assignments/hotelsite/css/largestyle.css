@@ -1,20 +1,66 @@
 @media only screen and (min-width: 960px)  { 
-/*-------------------Temple Page--------------------------------------*/
+
+    /*------------------------------Main Sections-------------------------*/  
+    h3 {
+        text-align: center;
+    }
+    
+    main {
+        margin-top: 60px;
+    }
+
+    .servicemain {
+        margin-top: 110px;
+    }
+
+    .reservationmain {
+        margin-top: 80px;
+    }
+
+    .templemain {
+        margin-top: 110px;
+        padding-right: 10px;
+        padding-left: 10px;
+    } 
+
+    .missionarymain {
+        margin-top: 110px;
+    }
+
+    .receptionmain {
+        margin-top: 110px;
+    }
+
+    .contactmain {
+        margin-top: 80px;
+    }
+
+    .meridianmain {
+        margin-top: 110px;
+    }
+
+    .jordanmain {
+        margin-top: 110px;
+    }
+
+    .seattlemain {
+        margin-top: 110px;
+    }
+    
+    .snowflakemain {
+        margin-top: 110px;
+    }
+ 
+    /*-------------------Temple Page--------------------------------------*/
     .templeinfo {
         float: right;
         margin-right: 30px;
         margin-left: 10px;
     }
 
-    main {
-        margin-top: 80px;
+    .templeinfo h3 {
+        font-size: 18px;
     }
- 
-    .templemain {
-        margin-top: 120px;
-        padding-right: 10px;
-        padding-left: 10px;
-    } 
 
     .temples img {
         margin-top: 7px;
@@ -35,7 +81,70 @@
     .temples:hover {
         box-shadow: 0 0 25px #333;
     } 
-/*------------------------------------------Header-----------------------------------------*/
+    /*-------------------------------Individual Temples----------------------------------------*/
+    .meridian {
+        display: grid;
+        grid-template-columns: 90px 90px 90px 90px;
+        grid-gap: 0;
+        grid-area: auto;
+    }
+
+    .jordan {
+        display: grid;
+        grid-template-columns: 100px 100px 100px 100px 100px;
+    }
+
+    .seattle {
+        display: grid;
+        grid-template-columns: 100px 100px 100px 100px;
+    }
+
+    .snowflake {
+        display: grid;
+        grid-template-columns: 100px 100px 100px 100px;
+    }
+
+    .meridian div {
+        display: block;
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+    .jordan div {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .seattle div {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .snowflake div {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .meridianmain img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .jordanmain img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .seattlemain img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .snowflakemain img {
+        display: block;
+        margin: 0 auto;
+    }
+    /*------------------------------------------Header-----------------------------------------*/
     .headerimage {
         margin-left: 30px;
     } 
@@ -45,8 +154,12 @@
     }
 
     .homepage div {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .homepage h4 {
+        margin: 0 auto;
     }
 
     /*-------------------------------------- Navigation Menu ----------------------------------*/
@@ -75,114 +188,12 @@
     .menu {
         flex-direction: row;
     }
-
-/*--------------------------------------Main-------------------------------------------*/
-
-    main h2{
-        font-size: 30px;
-    }
-
-    .mainsection {
-        padding: 5px;
-        margin: 5px;
-    }
-
-    /*-----------------Article Section-----------------------*/
-    .newsarticle {
-        margin: 0 auto;
-        margin-bottom: 10px;
-    }
-
-    .sodaarticle {
-        margin-bottom: 10px;
-    }
-
-    .sodaarticle h3 {
-        font-size: 30px;
-        text-align: center;
-        margin-top: 25px;
-    }
-
-    .sodaarticle h5 {
-        text-align: center;
-        margin-top: 8px;
-    }
-
-    .sodaarticle p {
-        text-align: center;
-        padding-right: 0;
-    }
-
-    .bball {
-        color: rgba(255, 0, 0, 0.808);
-    }
-
-    .newsarticle figcaption {
-        display: none;
-    }
-
-    .newsarticle h2 {
-        text-align: left;
-        padding-left: 0;
-    }
-
-    .newsarticle h3 {
-        font-size: 20px;
-        margin-right: 25px;
-        text-align: left;
-    }
-
-    .newsarticle h5 {
-        margin-right: 25px;
-        text-align: left;
-    }
-
-    .article {
-        padding: 15px;
-        padding-left: 0;
-    }
-    /*------------------------------Current Event-------------------------------*/
-    .currentevents {
-        margin: 0;
-        margin-bottom: 10px;
-    }
-
-    /*--------------------------Weather Report-------------------------------*/
-    .weatherreport h3 {
-        font-size: 25px;
-        border-bottom: none;
-        margin: 0 auto;
-        padding: 15px;
-    }
-
-    .weatherreport {
-        position: absolute;
-        left: 60px;
-        bottom: 150px;
-    }
-
-    .tempdetails {
-        padding: 15px;
-        font-size: 16px;
-    }
-
-    /*----------------------------Images---------------------------------------*/
-    .newsphoto {
-        float: right;
-        margin: 10px;
-    }
-
-    .sodaphoto {
-        padding: 10px;
-        position: relative;
-        left: 150px;
-    }
-
+ 
     /*-------------------------------Contact Info------------------------*/
     .contactinfo {
         display: flex;
         align-content: space-around;
-        width: 934px;
+        width: 100%;
     }
 
     .contactinfo p {
@@ -204,7 +215,7 @@
 
     /*-----------------------------------Footer------------------------------------*/
     footer{
-        width: 100%;
+        width: 101%;
         display: block;
         clear: right;
         padding-bottom: 8px;
@@ -217,61 +228,6 @@
     footer div {
         font-size: 16px;
         margin-top: 5px;
-    }
-
-    /*----------------------------------Weather Forecast Table-------------------*/
-    .weatherforecast h3 {
-        text-align: center;
-        font-family: 'Lobster', cursive;
-        font-size: 30px;
-    }
-
-    .weatherforecast {
-        display: block;
-        margin-bottom: 35px;
-    }
-
-    .weathertable {
-        border-collapse: collapse;
-        margin: 0 auto;
-    }
-
-    table, th, td {
-        border-style: ridge;
-        border-color: black;
-        border-width: 3px;
-        padding: 5px;
-    }
-
-    .weekday {
-        text-align: center;
-        vertical-align: middle;
-        background-color: #fff037;
-    }
-
-    .temp {
-        text-align: center;
-        padding: 10px;
-    }
-
-    /*---------------------------------Weather Gallery--------------------------------*/
-    .galleryh2 {
-        font-size: 40px;
-        padding: 20px;
-    }
-
-    .weathergrid {
-        margin: 0 auto;
-    }
-
-   
-
-    .flexchild {
-        width: 90%;
-    }
-
-    .weathergrid {
-        margin-bottom: 35px;
     }
 
     /*--------------------------------Thank You HTML-----------------------------------*/
@@ -321,33 +277,7 @@
     }
 
     /*---------------------------------Home Page---------------------------*/
-    .homepage {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row;
-    }
-
     .hero img {
         width: 100%;
-    }
-
-    .homepage p {
-        height: 424px;
-    }
-
-    .jsonmotto {
-        font-style: italic;
-    }
-
-    .homepage p img {
-        width: 220px;
-    }
-
-    .notes1{
-        margin-bottom: 10px;
-    }
-
-    .notes {
-        margin-bottom: 4px;
     }
   }

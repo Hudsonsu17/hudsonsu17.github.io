@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Germania+One|Source+Sans+Pro');
-/*font-family: 'Germania One', cursive;
-font-family: 'Source Sans Pro', sans-serif;
-font-family: 'Indie Flower', cursive;*/
+
     /*-----------------------------Temple Styles--------------------------*/
     .call {
         display: block;
@@ -170,10 +168,6 @@ font-family: 'Indie Flower', cursive;*/
         font-family: 'Germania One', cursive;
     }
 
-    .mainsection {
-        position: relative;
-    }
-
 /*---------------------------------Article Section---------------------------*/
     .newsarticle {
         border: 1px solid lightgray;
@@ -293,7 +287,6 @@ font-family: 'Indie Flower', cursive;*/
     /*-----------------------------------Contact Section-------------------------------------*/
 
     .contactinfo {
-        border: 1px solid lightgray;
         background-color: #dda15e;
         padding: 15px;
         margin: 0 auto;
@@ -344,40 +337,17 @@ font-family: 'Indie Flower', cursive;*/
     }
 
     /*-----------------------------Hidden Items-------------------------*/
-    .weatherforecast {
-        display: none;
-    }
-
-    .weatherforecast h3 {
-        padding: 5px;
-    }
-
     .menu.responsive .icon {
         display: none;
     }
 
 /*---------------------------------Gallery Page------------------------------*/
-    body h2 {
-        text-align: center;
-    }
-
     .container {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 10px;
         margin-bottom: 20px;
         margin-top: 20px;
-    }
-
-    .flexchild {
-        width: 70%;
-        padding: 8px;
-        display: block;
-        margin: 0 auto;
-    }
-
-    .individual-front {
-        margin-bottom: 10px;
     }
 
     /*--------------------------------Thank You HTML-----------------------------------*/
@@ -413,13 +383,6 @@ font-family: 'Indie Flower', cursive;*/
         margin-bottom: 20px;
         margin-top: 20px;
         padding: 10px;
-    }
-
-    main form h1 {
-        margin: 0 auto;
-        padding: 5px;
-        font-family: 'Germania One', cursive;
-        text-align: center;
     }
 
     .info {
@@ -459,20 +422,6 @@ font-family: 'Indie Flower', cursive;*/
     }
 
     /*-------------------------------Home Page--------------------------------*/
-    .hero img {
-        width: 85%;
-        display: block;
-        margin: 0 auto;
-        padding: 15px;
-        padding-top: 30px;
-    }
-
-    .hero h1 {
-        text-align: center;
-        margin-bottom: 20px;
-        margin-top: 50px;
-        font-family: 'Lobster', cursive;
-    }
 
     .homepage {
         width: 77%;
@@ -485,56 +434,3 @@ font-family: 'Indie Flower', cursive;*/
         padding-top: 0;
     }
 
-    .homepage h3 {
-        color: #004d4d;
-        font-style: bold;
-        font-size: 25px;
-        margin: 0 auto;
-        padding: 10px;
-        text-align: center;
-        font-family: 'Indie Flower', cursive;
-    }
-
-    .notes {
-        margin: 0 auto;
-        padding: 5px;
-        width: 220px;
-        word-wrap: break-word;
-        text-align: center;
-        font-family: 'Arimo', sans-serif;
-        font-size: 14px;
-    }
-
-    .notes1 {
-        margin: 0 auto;
-        padding: 5px;
-        width: 220px;
-        word-wrap: break-word;
-        text-align: center;
-        font-family: 'Arimo', sans-serif;
-        font-size: 14px;
-    }
-
-    .homepage p {
-        padding: 10px;
-        margin: 10px;
-        border-style: inset;
-        border-width: 10px;
-        border-color: green;
-        background-color: #f1f1f1;
-        width: 220px;
-    }
-
-    .jsonmotto {
-        font-style: italic;
-        margin: 0 auto;
-        padding: 5px;
-        width: 220px;
-        word-wrap: break-word;
-        text-align: center;
-        font-family: 'Arimo', sans-serif;
-    }
-
-    .homepage p img {
-        width: 220px;
-    }

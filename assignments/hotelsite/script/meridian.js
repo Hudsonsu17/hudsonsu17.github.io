@@ -25,7 +25,6 @@ request.send();
 request.onload = function () {
     let getData = request.response;
     let temple = getData['temples'];
-    console.log(temple);
 
     for (let i = 0; i < temple.length; i++) {
         if (temple[i].name == "Meridian") {
@@ -59,7 +58,6 @@ grab.send();
 grab.onload = function () {
     let grabData = grab.response;
     let temples = grabData['times'];
-    console.log(temples);
 
     for (let i = 0; i < temples.length; i++) {
         if (temples[i].name == "Meridian") {

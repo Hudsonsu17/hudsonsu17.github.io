@@ -23,7 +23,6 @@ request.send();
 request.onload = function () {
     let getData = request.response;
     let temple = getData['temples'];
-    console.log(temple);
 
     for (let i = 0; i < temple.length; i++) {
         if (temple[i].name == "Jordan River") {
@@ -39,6 +38,39 @@ request.onload = function () {
             h4List.textContent = date;
             eventSection.appendChild(h4List);
             events.appendChild(eventSection);
+            }
+        }
+    }
+}
+
+//This is to get the session dates for the temple
+
+let output = document.querySelector('#sessions');
+
+let getURL = 'https://hudsonsu17.github.io/assignments/hotelsite/json/sessions.json';
+let grab = new XMLHttpRequest();
+grab.open('GET', getURL);
+grab.responseType = 'json';
+grab.send();
+
+grab.onload = function () {
+    let grabData = grab.response;
+    let temples = grabData['times'];
+
+    for (let i = 0; i < temples.length; i++) {
+        if (temples[i].name == "Jordan River") {
+            let templeList = temples[i].session;
+            let time = 0; 
+
+            for (let j = 0; j < templeList.length; j++) {
+                let date = templeList[time];
+                time++;
+
+            let sessionTime = document.createElement('div');
+            let times = document.createElement('h4');
+            times.textContent = date;
+            sessionTime.appendChild(times);
+            output.appendChild(sessionTime);
             }
         }
     }
