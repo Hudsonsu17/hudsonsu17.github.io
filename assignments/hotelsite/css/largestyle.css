@@ -428,4 +428,14 @@
     .missionform {
         margin-left: 20px;
     }
+
+    .homeart {
+        width: 650px;
+        position: absolute;
+        left: 650px;
+        bottom: -320px;
+        border-style: double;
+        border-width: 3px;
+        border-color: #333;
+    }
   }
