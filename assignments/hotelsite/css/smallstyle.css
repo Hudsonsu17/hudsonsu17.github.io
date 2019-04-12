@@ -2,8 +2,11 @@
 
     /*-----------------------------Temple Styles--------------------------*/
     h3 {
-        text-align: center;
         font-family: 'Indie Flower', cursive;
+    }
+
+    .reception h3 {
+        text-align: center;
     }
 
     p {
@@ -413,7 +416,7 @@
     /*-------------------------------Home Page--------------------------------*/
 
     .homepage {
-        width: 500px;
+        width: 300px;
         padding: 15px;
         padding-top: 0;
     }
