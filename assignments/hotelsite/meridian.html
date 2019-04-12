@@ -57,7 +57,11 @@
 
     <main class="meridianmain">
         <h2>Meridian, Idaho Temple</h2>
-        <img src="images/meridianlandscape.jpg" alt="landscape view of temple">
+        <picture>
+            <source media="(max-width: 460px)" srcset="images/meridianlandscapesmall.jpg">
+            <source media="(min-width: 801px)" srcset="images/meridianlandscape.jpg">
+            <img src="images/meridianlandscape.jpg" alt="landscape view of temple">
+        </picture>
         <article id="closed" class="homepage">
             <h3>Dates For When The Temple Is Closed:</h3>
 

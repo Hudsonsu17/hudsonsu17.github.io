@@ -50,7 +50,27 @@
     .snowflakemain {
         margin-top: 110px;
     }
- 
+
+    .referencemain {
+        margin-top: 110px;
+    }
+
+    .thanksmain {
+        margin-top: 180px;
+        margin-bottom: 80px;
+    }
+
+    .commentmain {
+        margin-top: 180px;
+        margin-bottom: 80px;
+    }
+  
+    .call {
+        width: 300px;
+        font-size: 25px;
+        left: 770px;
+        top: 130px;
+    }
     /*-------------------Temple Page--------------------------------------*/
     .templeinfo {
         float: right;
@@ -63,8 +83,9 @@
     }
 
     .temples img {
-        margin-top: 7px;
-        margin-left: 7px;
+        margin-top: 4px;
+        margin-left: 4px;
+        display: unset;
     }
 
     .temples {
@@ -73,9 +94,6 @@
         margin: 0 auto;
         margin-top: 20px;
         margin-bottom: 50px;
-        border-style: dashed;
-        border-width: 2px;
-        border-color: #dda15e;
     }
 
     .temples:hover {
@@ -145,9 +163,23 @@
         margin: 0 auto;
     }
     /*------------------------------------------Header-----------------------------------------*/
+    header {
+        position: fixed;
+    }
+
     .headerimage {
-        margin-left: 30px;
+        width: 60px;
+        height: 60px;
     } 
+
+    .motto {
+        position: static;
+        margin-bottom: 0;
+    }
+
+    header h1 {
+        position: static;
+    }
 
     .reference:visited {
         color: #dda15e;
@@ -183,12 +215,36 @@
 
     .menu li a {
         font-size: 20px;
+        text-align: right;
     }
 
     .menu {
         flex-direction: row;
     }
- 
+
+    li a, .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li.dropdown {
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #4d572d;
+        min-width: 250px;
+        z-index: 1;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
     /*-------------------------------Contact Info------------------------*/
     .contactinfo {
         display: flex;
@@ -237,9 +293,6 @@
     }
 
     /*------------------------------Storm Form Page----------------------------------*/
-    form {
-        display: grid;
-    }
 
     textarea {
         height: 160px;
@@ -279,5 +332,64 @@
     /*---------------------------------Home Page---------------------------*/
     .hero img {
         width: 100%;
+    }
+
+    .servicesection {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0;
+        margin: 20px;
+    }
+
+    .services {
+        margin-left: 90px;
+        padding: 20px;
+    }
+
+    .amenities {
+        padding: 20px;
+    }
+
+    .slideshow {
+        max-width: 500px;
+    }
+
+    .mySlides {
+        width: 100%;
+        margin: 50px;
+    }
+
+    .missionarymain section {
+        display: grid;
+        grid-template-columns: 700px 500px;
+        grid-gap: 0;
+    }
+
+    .mission {
+        width: 700px;
+        position: absolute;
+        bottom: 100px;
+        left: 600px;
+    }
+
+    .suites {
+        margin: 20px;
+    }
+
+    .suites p {
+        width: 650px;
+    }
+
+    .suites img {
+        float: right;
+        margin-bottom: 20px;
+    }
+
+    .missioncontact {
+        width: 620px;
+    }
+
+    .missionbutton {
+        width: 150px;
     }
   }
