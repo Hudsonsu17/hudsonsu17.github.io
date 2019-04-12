@@ -344,7 +344,9 @@
     }
 
     /*------------------------------Storm Gallery Page----------------------------------*/
-    form {
+    .form {
+        display: flex;
+        flex-direction: column;
         padding: 20px;
         width: 90%;
     }
@@ -411,12 +413,7 @@
     /*-------------------------------Home Page--------------------------------*/
 
     .homepage {
-        width: 77%;
-        margin: 0 auto;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        width: 500px;
         padding: 15px;
         padding-top: 0;
     }
@@ -444,5 +441,32 @@
         margin: 0 auto;
         margin-bottom: 10px;
         padding: 20px;
+    }
+
+    .reception img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .meridian {
+        display: grid;
+        grid-template-columns: 80px 80px 80px 80px;
+        grid-gap: 0;
+        grid-area: auto;
+    }
+
+    .jordan {
+        display: grid;
+        grid-template-columns: 80px 80px 80px 80px;
+    }
+
+    .seattle {
+        display: grid;
+        grid-template-columns: 80px 80px 80px 80px;
+    }
+
+    .snowflake {
+        display: grid;
+        grid-template-columns: 80px 80px 80px 80px;
     }
 

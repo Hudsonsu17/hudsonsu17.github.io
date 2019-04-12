@@ -105,6 +105,7 @@
         grid-template-columns: 90px 90px 90px 90px;
         grid-gap: 0;
         grid-area: auto;
+        margin-left: 60px;
     }
 
     .jordan {
@@ -115,11 +116,13 @@
     .seattle {
         display: grid;
         grid-template-columns: 100px 100px 100px 100px;
+        margin-left: 40px;
     }
 
     .snowflake {
         display: grid;
         grid-template-columns: 100px 100px 100px 100px;
+        margin-left: 40px;
     }
 
     .meridian div {
@@ -185,9 +188,15 @@
         color: #dda15e;
     }
 
+    .homepage {
+        display: block;
+        margin: 0 auto;
+    }
+
     .homepage div {
         display: flex;
         flex-direction: column;
+        margin: 5px;
     }
 
     .homepage h4 {
@@ -391,5 +400,31 @@
 
     .missionbutton {
         width: 150px;
+    }
+
+    .reception img {
+        margin: 20px;
+        margin-left: 50px;
+        display: unset;
+    }
+
+    .reception h3 {
+        font-size: 25px;
+        margin: 0;
+        padding-top: 20px;
+    }
+
+    .p {
+        width: 650px;
+        float: right;
+        margin-right: 100px;
+    }
+
+    .form {
+        margin-left: 40px;
+    }
+
+    .missionform {
+        margin-left: 20px;
     }
   }
