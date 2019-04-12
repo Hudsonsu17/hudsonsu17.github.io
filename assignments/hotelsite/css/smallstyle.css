@@ -158,119 +158,6 @@
         font-family: 'Germania One', cursive;
     }
 
-/*---------------------------------Article Section---------------------------*/
-    .newsarticle {
-        border: 1px solid lightgray;
-        background-color: #bc6c25;
-        padding: 15px;
-        margin: 10px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .sodaarticle {
-        border: 1px solid lightgray;
-        background-color: #bc6c25;
-        padding: 15px;
-        margin: 10px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin: 0 auto;
-    }
-
-    .sodaarticle h3 {
-        font-family: 'Germania One', cursive;
-        margin: 5px;
-    }
-
-    .sodaarticle h5 {
-        font-family: 'Arimo', sans-serif;
-        margin: 5px;
-    }
-
-    .newsphoto {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 15px;
-    }
-
-    .newsarticle h3 {
-        margin: 0 auto;
-        font-family: 'Arimo', sans-serif;
-        margin: 5px;
-    }
-
-    .newsarticle h5 {
-        margin: 0 auto;
-        font-family: 'Arimo', sans-serif;
-        margin: 5px;
-    }
-
-    /*------------------------------Current Event-------------------------------*/
-    .currentevents {
-        border-style: dashed;
-        border-width: 2px;
-        background-color: lightgrey;
-        margin: 10px;
-    }
-
-    .currentevents h2 {
-        font-family: 'Germania One', cursive;
-    }
-
-    .events {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        border: 1px solid lightgray;
-        background-color: #e6fff7;
-        width: 50%;
-    }
-
-    .events h4 {
-        padding: 10px;
-        font-family: 'Indie Flower', cursive;
-        font-size: 18px;
-    }
-    /*-------------------------------Weather Report-----------------------------*/
-
-    .weatherreport {
-        position: relative;
-        width: 70%;
-        margin: 0 auto;
-        border-style: ridge;
-        border-color: #491d26;
-        border-width: 5px;
-        box-shadow: 0 0 30px #fff;
-        background-color: #803342;
-        opacity: .90;
-        padding: 5px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        font-size: 14px;
-    }
-
-    .weatherreport h3 {
-        text-align: center;
-        font-size: 19px;
-        border-bottom: none;
-        color: white;
-        margin: 0 auto;
-        padding: 5px;
-        font-family: 'Germania One', cursive;
-    }
-
-    .tempdetails {
-        padding: 15px;
-        color: white;
-        border-style: inset;
-        border-color: #491d26;
-        border-width: 2px;
-        font-family: 'Arimo', sans-serif;
-    }
-
     .label {
         font-size: 14px;
     }
@@ -331,7 +218,6 @@
         display: none;
     }
 
-/*---------------------------------Gallery Page------------------------------*/
     .container {
         display: grid;
         grid-template-columns: 1fr;
@@ -346,7 +232,6 @@
         display: block;
     }
 
-    /*------------------------------Storm Gallery Page----------------------------------*/
     .form {
         display: flex;
         flex-direction: column;
@@ -471,5 +356,9 @@
     .snowflake {
         display: grid;
         grid-template-columns: 80px 80px 80px 80px;
+    }
+
+    .missionform {
+        margin: 20px;
     }
 

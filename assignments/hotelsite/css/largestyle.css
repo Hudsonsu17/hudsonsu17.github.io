@@ -302,8 +302,6 @@
         margin: 169px;
     }
 
-    /*------------------------------Storm Form Page----------------------------------*/
-
     textarea {
         height: 160px;
         width: 100%;
@@ -423,10 +421,6 @@
 
     .form {
         margin-left: 40px;
-    }
-
-    .missionform {
-        margin-left: 20px;
     }
 
     .homeart {
